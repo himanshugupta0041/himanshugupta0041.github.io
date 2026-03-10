@@ -1,0 +1,123 @@
+/* PRODUCT TITLE */
+.product-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0f172a;
+}
+
+/* PRICE STYLING */
+#product-price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #0ea5e9, #0369a1);
+    background-clip: text;
+    color: transparent;
+}
+
+#product-oldPrice {
+    opacity: 0.6;
+}
+
+#product-discount {
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #16a34a;
+    color: white;
+    display: inline-block;
+}
+
+/* HIGHLIGHTS */
+#product-highlights li {
+    background: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* SPEC TABLE */
+#product-specs {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+#product-specs tr td {
+    padding: 14px 16px;
+}
+
+#product-specs tr:nth-child(odd) {
+    background: #f8fafc;
+}
+
+/* TABS */
+.tab-btn {
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    color: #0ea5e9;
+}
+
+.tab-btn.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 35px;
+    background: #0ea5e9;
+    border-radius: 4px;
+}
+
+/* TAB CONTENT ANIMATION */
+.tab-content {
+    animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* SIMILAR PRODUCTS */
+#similar-products::-webkit-scrollbar {
+    display: none;
+}
+
+#similar-products > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#similar-products > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ZOOM WINDOW */
+#zoom-result {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: white;
+}
+
+#zoom-lens {
+    border: 2px solid rgba(14,165,233,0.7);
+    background-color: rgba(14,165,233,0.1);
+    backdrop-filter: blur(6px);
+}
+
+.compare-btn-added {
+    background: #0ea5e9 !important;
+    color: white !important;
+    border-color: #0ea5e9 !important;
+}
+
+.compare-btn {
+    transition: all .2s ease;
+}

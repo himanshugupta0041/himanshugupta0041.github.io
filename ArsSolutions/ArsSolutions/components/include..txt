@@ -1,0 +1,13 @@
+// // Load Navbar
+// fetch("components/navbar.html")
+//   .then(res => res.text())
+//   .then(html => {
+//     document.getElementById("navbar").innerHTML = html;
+//   });
+
+// // Load Footer
+// fetch("components/footer.html")
+//   .then(res => res.text())
+//   .then(html => {
+//     document.getElementById("footer").innerHTML = html;
+//   });

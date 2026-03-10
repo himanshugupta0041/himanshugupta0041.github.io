@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARS Solutions India</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="components/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#64748b',
+                        accent: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <img class="site-logo" src="images/ARSSolutionsLogo.png" alt="ARS Solutions" class="h-8 w-auto">
+                    <span class="text-xl font-semibold text-accent"><span class="text-primary">ARS SOLUTIONS</span></span>
+                </div>
+    <div class="relative hidden md:block">
+    <input 
+        id="search-input"
+        type="text" 
+        placeholder="Search products..."
+        class="px-4 py-2 w-64 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+    >
+
+    Search Results
+    <div 
+        id="search-results" 
+        class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-2 hidden max-h-64 overflow-y-auto z-50"
+    ></div>
+</div>
+                <div class="hidden md:flex items-center gap-8">
+                    <div class="relative group">
+                        <a href="#categories" class="text-gray-600 hover:text-primary transition-colors font-medium flex items-center gap-1 py-5">
+                            Categories
+                            <i data-feather="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        Categories Mega Menu
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
+                            <div class="grid grid-cols-3 gap-0">
+                                Teleprompters
+                                <a href="teleprompters.html" class="p-5 hover:bg-blue-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-primary group-hover/item:scale-110 transition-all">
+                                        <i data-feather="monitor" class="w-6 h-6 text-primary group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-primary transition-colors">Teleprompters</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Studio & broadcast equipment</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/technology/200x150/101" alt="Teleprompters" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                Laptops
+                                <a href="laptop_categories.html" class="p-5 hover:bg-emerald-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-emerald-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="laptop" class="w-6 h-6 text-emerald-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-emerald-500 transition-colors">Laptops</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Enterprise computing solutions</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/office/200x150/202" alt="Laptops" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                Accessories
+                                <a href="accessories.html" class="p-5 hover:bg-amber-50/50 transition-colors group/item">
+                                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-amber-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="mouse-pointer" class="w-6 h-6 text-amber-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-amber-500 transition-colors">Accessories</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Mice, keyboards & peripherals</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/workspace/200x150/303" alt="Accessories" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+</div>
+                    <a href="#products" class="text-gray-600 hover:text-primary transition-colors font-medium">Products</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-primary transition-colors font-medium">Why Us</a>
+                    <a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium shadow-lg shadow-primary/25">Get Quote</a>
+                </div>
+<button class="md:hidden text-gray-600" id="mobileMenuBtn">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        Mobile Menu
+        <div class="md:hidden hidden bg-white border-t" id="mobileMenu">
+            <div class="px-4 py-3 space-y-2">
+                <div class="py-2">
+                    <span class="text-gray-800 font-medium block mb-2">Categories</span>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="teleprompters.html" class="block py-2 text-gray-600 text-sm">Teleprompters</a>
+                        <a href="laptop_categories.html" class="block py-2 text-gray-600 text-sm">Laptops</a>
+                        <a href="accessories.html" class="block py-2 text-gray-600 text-sm">Accessories</a>
+                    </div>
+                </div>
+<a href="#products" class="block py-2 text-gray-600">Products</a>
+                <a href="#why-us" class="block py-2 text-gray-600">Why Us</a>
+                <a href="#contact" class="block py-2 text-primary font-medium">Get Quote</a>
+            </div>
+        </div>
+</nav> -->
+
+ <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <img class="site-logo" src="images/ARSSolutionsLogo.png" alt="ARS Solutions" class="h-8 w-auto">
+                    <span class="text-xl font-semibold text-accent"><span class="text-primary">ARS SOLUTIONS</span></span>
+                </div>
+    <div class="relative hidden md:block">
+                <input 
+                    id="search-input"
+                    type="text" 
+                    placeholder="Search products..."
+                    class="px-4 py-2 w-64 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                >
+                <div 
+                    id="search-results" 
+                    class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-2 hidden max-h-64 overflow-y-auto z-50"
+                ></div>
+            </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors font-medium">
+                    Home
+                </a>
+                    <div class="relative group">
+                        <a href="#categories" class="text-gray-600 hover:text-primary transition-colors font-medium flex items-center gap-1 py-5">
+                            Categories
+                            <i data-feather="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Categories Mega Menu -->
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
+                            <div class="grid grid-cols-3 gap-0">
+                                <!-- Teleprompters -->
+                                <a href="teleprompters.html" class="p-5 hover:bg-blue-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-primary group-hover/item:scale-110 transition-all">
+                                        <i data-feather="monitor" class="w-6 h-6 text-primary group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-primary transition-colors">Teleprompters</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Studio & broadcast equipment</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/technology/200x150/101" alt="Teleprompters" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                <!-- Laptops -->
+                                <a href="laptop_categories.html" class="p-5 hover:bg-emerald-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-emerald-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="laptop" class="w-6 h-6 text-emerald-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-emerald-500 transition-colors">Laptops</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Enterprise computing solutions</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/office/200x150/202" alt="Laptops" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                <!-- Accessories -->
+                                <a href="it-products.html" class="p-5 hover:bg-amber-50/50 transition-colors group/item">
+                                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-amber-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="mouse-pointer" class="w-6 h-6 text-amber-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-amber-500 transition-colors">Accessories</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Mice, keyboards & peripherals</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/workspace/200x150/303" alt="Accessories" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+</div>
+                    <a href="aboutus.html" class="text-gray-600 hover:text-primary transition-colors font-medium">
+                    About Us
+                </a>
+
+                <!-- CONTACT -->
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors font-medium">
+                    Contact
+                </a>
+                <a href="contact.html" class="block py-2 text-primary font-medium">Get Quote</a>
+            </div>
+             <button id="mobileSearchBtn" class="md:hidden text-gray-600">
+        <i data-feather="search" class="w-6 h-6"></i>
+    </button>
+
+    <!-- MOBILE MENU ICON -->
+    <button id="mobileMenuBtn" class="md:hidden text-gray-600">
+        <i data-feather="menu" class="w-6 h-6"></i>
+    </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobileMenu">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors font-medium">
+                    Home
+                </a>
+                <div class="py-2">
+                    <span class="text-gray-800 font-medium block mb-2">Categories</span>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="teleprompters.html" class="block py-2 text-gray-600 text-sm">Teleprompters</a>
+                        <a href="laptop_categories.html" class="block py-2 text-gray-600 text-sm">Laptops</a>
+                        <a href="accessories.html" class="block py-2 text-gray-600 text-sm">Accessories</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Contact</a>
+                <a href="contact.html" class="block py-2 text-primary font-medium">Get Quote</a>
+                <!-- <a href="quote-modal.html" class="block py-2 text-primary font-medium">Get Quote</a> -->
+            </div>
+        </div> 
+</nav>
+<!-- MOBILE MENU -->
+<!-- <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+    <div class="px-4 py-3 space-y-3">
+        
+        <a href="index.html" class="block text-gray-800 font-medium">Home</a>
+
+        <div>
+            <span class="block text-gray-800 font-medium mb-2">Categories</span>
+            <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                <a href="teleprompters.html" class="block py-1 text-gray-600 text-sm">Teleprompters</a>
+                <a href="laptop_categories.html" class="block py-1 text-gray-600 text-sm">Laptops</a>
+                <a href="accessories.html" class="block py-1 text-gray-600 text-sm">Accessories</a>
+            </div>
+        </div>
+
+        <a href="contact.html" class="block text-gray-800 font-medium">Contact</a>
+        <a href="contact.html" class="block text-primary font-medium">Get Quote</a>
+
+    </div>
+</div> -->
+
+<!-- MOBILE SEARCH POPUP -->
+<div id="mobileSearchPopup"
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-start justify-center p-4 z-[9999]">
+
+    <!-- MUST BE RELATIVE -->
+    <div class="w-full max-w-md bg-white rounded-xl p-4 shadow-lg mt-20 relative">
+
+        <!-- INPUT + CLOSE -->
+        <div class="flex items-center gap-2">
+            <input 
+                id="mobileSearchInput"
+                type="text"
+                placeholder="Search products..."
+                class="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary outline-none"
+            >
+            <button id="mobileSearchClose" class="text-gray-600">
+                <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE RESULTS — SAME STRUCTURE AS DESKTOP -->
+        <div id="mobileSearchResults"
+             class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-1 hidden max-h-60 overflow-y-auto z-[99999]">
+        </div>
+
+    </div>
+</div>
+<!-- MOBILE FILTER POPUP -->
+<div id="mobileFilterPopup"
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-end z-[9999]">
+
+    <div class="w-full bg-white rounded-t-2xl p-5 max-h-[80vh] overflow-y-auto shadow-xl">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold text-accent">Filters</h2>
+            <button id="closeMobileFilters">
+                <i data-feather="x" class="w-6 h-6 text-gray-600"></i>
+            </button>
+        </div>
+
+        <!-- FILTER CONTENT (Same as sidebar) -->
+        <div class="space-y-6">
+
+            <!-- BRAND -->
+            <div>
+                <h3 class="font-semibold mb-2">Brand</h3>
+                <div id="mobile-filter-brand"></div>
+            </div>
+
+            <!-- AVAILABILITY -->
+            <div>
+                <h3 class="font-semibold mb-2">Availability</h3>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" value="In Stock" class="mobile-filter-availability">
+                    <span>In Stock</span>
+                </label>
+            </div>
+
+            <!-- PRICE -->
+            <div>
+                <h3 class="font-semibold mb-2">Price</h3>
+                <input id="mobile-minPrice" type="number" placeholder="Min" class="w-full mb-2 border rounded px-3 py-1">
+                <input id="mobile-maxPrice" type="number" placeholder="Max" class="w-full border rounded px-3 py-1">
+            </div>
+
+            <!-- SIZE -->
+            <div>
+                <h3 class="font-semibold mb-2">Display Size</h3>
+                <div id="mobile-filter-size"></div>
+            </div>
+
+            <!-- TYPE -->
+            <div>
+                <h3 class="font-semibold mb-2">Type</h3>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" value="Presidential" class="mobile-filter-type">
+                    <span>Presidential</span>
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" value="Portable" class="mobile-filter-type">
+                    <span>Portable</span>
+                </label>
+            </div>
+
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="mt-6 flex gap-3">
+            <button id="resetMobileFilters" class="w-1/2 py-2 bg-gray-200 rounded-lg">Reset</button>
+            <button id="applyMobileFilters" class="w-1/2 py-2 bg-primary text-white rounded-lg">Apply</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-2 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-primary font-semibold text-sm uppercase tracking-wider">Professional Studio Equipment</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-accent mt-2 mb-4">Teleprompters</h1>
+            <p class="text-gray-500 text-lg max-w-2xl mx-auto">Broadcast-quality teleprompters for studios, presentations, and live events. Wholesale pricing available for bulk orders.</p>
+        </div> 
+
+        <!-- Subcategory Filter -->
+        <!-- <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button class="subcategory-btn active px-5 py-2 rounded-full bg-primary text-white font-medium transition-all" data-filter="all">All Teleprompters</button>
+            <button class="subcategory-btn px-5 py-2 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition-all" data-filter="studio">Studio</button>
+            <button class="subcategory-btn px-5 py-2 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition-all" data-filter="portable">Portable</button>
+            <button class="subcategory-btn px-5 py-2 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition-all" data-filter="mobile">Mobile</button>
+            <button class="subcategory-btn px-5 py-2 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition-all" data-filter="accessories">Accessories</button>
+        </div> -->
+    </section> 
+
+    <!-- Products Grid -->
+     <!-- <section class="pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="teleprompterGrid"> -->
+            <!-- Studio Teleprompters -->
+            <!-- <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="studio">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/701" alt="Studio Pro X1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Bestseller</span>
+                    <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded">Studio</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Studio Pro X1</h3>
+                    <p class="text-gray-500 text-sm mb-4">19" broadcast teleprompter with HD monitor, adjustable glass, and professional mounting system.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">19" Display</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HDMI/USB</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$1,299</span>
+                            <span class="text-gray-400 text-sm line-through ml-2">$1,599</span>
+                        </div> -->
+                        
+
+                        <!--added code-->
+                        <!-- <a href="product.html?id=studio-pro-x1" class="text-primary font-medium">
+                        View Details →
+                        </a> -->
+
+                    <!-- <button class="bg-primary text-white px-5 py-2.5">Get Quote</button>  -->
+                        <!-- <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="studio">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/702" alt="Broadcast Master 22" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-medium px-2 py-1 rounded">Studio</span>
+                    <span class="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">New</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Broadcast Master 22</h3>
+                    <p class="text-gray-500 text-sm mb-4">22" 4K prompter with ultra-wide viewing angle, perfect for professional TV studios.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">22" 4K</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">180° View</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$2,499</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="studio">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/703" alt="Presidential Series 24" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-purple-600 text-white text-xs font-medium px-2 py-1 rounded">Studio</span>
+                    <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Premium</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Presidential Series 24</h3>
+                    <p class="text-gray-500 text-sm mb-4">Premium 24" prompter designed for high-profile events and executive presentations.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">24" Display</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Presidential</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$3,999</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Portable Teleprompters -->
+            <!-- <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="portable">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/704" alt="Event Pro Portable" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-medium px-2 py-1 rounded">Portable</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Event Pro Portable</h3>
+                    <p class="text-gray-500 text-sm mb-4">Foldable prompter for on-location events, weighs only 8 lbs with quick assembly.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">15" Display</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">8 lbs</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$899</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="portable">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/705" alt="Presenter Elite 15" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-medium px-2 py-1 rounded">Portable</span>
+                    <span class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Popular</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Presenter Elite 15</h3>
+                    <p class="text-gray-500 text-sm mb-4">Compact 15" prompter perfect for presentations, conferences, and corporate events.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">15" Display</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Travel Case</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$649</span>
+                            <span class="text-gray-400 text-sm line-through ml-2">$799</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="portable">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/706" alt="Confidence Monitor 17" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-medium px-2 py-1 rounded">Portable</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Confidence Monitor 17</h3>
+                    <p class="text-gray-500 text-sm mb-4">Stage confidence monitor with reverse display for performers and speakers.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">17" Display</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Reverse Mirror</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$749</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            Mobile Teleprompters
+                        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="mobile">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/707" alt="iPad Pro Teleprompter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-cyan-500 text-white text-xs font-medium px-2 py-1 rounded">Mobile</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">iPad Pro Teleprompter</h3>
+                    <p class="text-gray-500 text-sm mb-4">Professional iPad-based prompter system, perfect for mobile journalism and content creators.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">12.9" iPad</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bluetooth</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$399</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="mobile">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/708" alt="Smartphone Mini Prompter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-cyan-500 text-white text-xs font-medium px-2 py-1 rounded">Mobile</span>
+                    <span class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Budget</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Smartphone Mini Prompter</h3>
+                    <p class="text-gray-500 text-sm mb-4">Ultra-portable smartphone teleprompter for vloggers and small productions.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Universal</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">App Included</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$149</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            //accessories
+             <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="accessories">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/709" alt="Bluetooth Remote Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Accessory</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Bluetooth Remote Control</h3>
+                    <p class="text-gray-500 text-sm mb-4">Wireless remote with speed control, pause/play, and scroll functions for all prompters.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">30m Range</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Rechargeable</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$79</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="accessories">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/710" alt="Heavy Duty Tripod Mount" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Accessory</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">Heavy Duty Tripod Mount</h3>
+                    <p class="text-gray-500 text-sm mb-4">Professional grade tripod mount with 360° rotation and height adjustment.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Universal</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">360°</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$199</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="accessories">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://static.photos/technology/640x480/711" alt="ProPrompt Software License" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Accessory</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-accent mb-2">ProPrompt Software License</h3>
+                    <p class="text-gray-500 text-sm mb-4">Professional teleprompter software with script management and cloud sync.</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Lifetime</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Cloud Sync</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-primary">$299</span>
+                            <span class="text-gray-400 text-sm ml-1">/year</span>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium flex items-center gap-2">
+                            Get Quote <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Bulk Order CTA -->
+        <!-- <div class="mt-16 bg-gradient-to-r from-primary to-blue-600 rounded-3xl p-8 md:p-12 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Need Volume Pricing?</h2>
+            <p class="text-blue-100 text-lg mb-6 max-w-2xl mx-auto">We offer special discounts for orders of 10+ units. Contact our sales team for custom quotes and enterprise solutions.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="index.html#contact" class="bg-white text-primary px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all">
+                    Request Quote
+                </a>
+                <a href="mailto:sales@techtidehub.com" class="bg-white/20 text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all backdrop-blur-sm">
+                    Email Sales Team
+                </a>
+            </div>
+        </div>
+    </section>  -->
+
+    <section class="pb-12 max-w-7xl mx-auto px-4 flex gap-10">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 bg-white shadow rounded-xl p-5 h-fit sticky top-28">
+
+        <h2 class="text-xl font-semibold mb-4 text-accent">Filters</h2>
+
+        <!-- BRAND -->
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Brand</h3>
+            <div id="filter-brand"></div>
+        </div>
+
+        <!-- AVAILABILITY -->
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Availability</h3>
+            <label class="flex items-center gap-2">
+                <input type="checkbox" value="In Stock" class="filter-availability">
+                <span>In Stock</span>
+            </label>
+        </div>
+
+        <!-- PRICE RANGE -->
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Price</h3>
+            <input id="minPrice" type="number" placeholder="Min" class="w-full mb-2 border rounded px-3 py-1">
+            <input id="maxPrice" type="number" placeholder="Max" class="w-full border rounded px-3 py-1">
+        </div>
+
+        <!-- DISPLAY SIZE -->
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Display Size</h3>
+            <div id="filter-size"></div>
+        </div>
+
+        <!-- CATEGORY TYPE -->
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Type</h3>
+            <label class="flex items-center gap-2">
+                <input type="checkbox" value="Presidential" class="filter-type">
+                <span>Presidential</span>
+            </label>
+            <label class="flex items-center gap-2">
+                <input type="checkbox" value="Portable" class="filter-type">
+                <span>Portable</span>
+            </label>
+        </div>
+
+        <button id="resetFilters" class="mt-3 w-full bg-gray-200 hover:bg-gray-300 py-2 rounded">Reset Filters</button>
+
+    </aside>
+
+    <!-- MOBILE FILTER BUTTON -->
+<div class="md:hidden px-4 mb-4">
+    <button id="openMobileFilters" 
+        class="w-full bg-primary text-white py-2.5 rounded-lg font-medium flex items-center justify-center gap-2">
+        <i data-feather="sliders" class="w-4 h-4"></i>
+        Filters
+    </button>
+</div> 
+    <!-- PRODUCT GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1" id="teleprompter-grid">
+        <!-- Loaded dynamically -->
+    </div>
+
+</section>
+
+    <!-- REQUEST QUOTE MODAL -->
+<div id="quoteModal"
+     class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden z-[9999]">
+
+    <div class="bg-white w-full max-w-md rounded-2xl shadow-xl p-6 relative">
+
+        <!-- Close Button -->
+        <button onclick="closeQuoteModal()"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+            ✕
+        </button>
+
+        <h2 class="text-2xl font-semibold text-accent mb-4">Request a Quote</h2>
+
+        <form id="quoteForm">
+
+            <div class="mb-3">
+                <label class="block text-sm font-medium">Name</label>
+                <input type="text" name="name" required
+                       class="w-full border rounded-lg px-3 py-2 mt-1">
+            </div>
+
+            <div class="mb-3">
+                <label class="block text-sm font-medium">Email</label>
+                <input type="email" name="email" required
+                       class="w-full border rounded-lg px-3 py-2 mt-1">
+            </div>
+
+            <div class="mb-3">
+                <label class="block text-sm font-medium">Product</label>
+                <input type="text" id="quoteProduct" name="product" readonly
+                       class="w-full border rounded-lg px-3 py-2 mt-1 bg-gray-100">
+            </div>
+
+            <div class="mb-3">
+                <label class="block text-sm font-medium">Message</label>
+                <textarea name="message" rows="3"
+                          class="w-full border rounded-lg px-3 py-2 mt-1"></textarea>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-primary text-white py-2 rounded-lg hover:bg-blue-600">
+                Send Request
+            </button>
+
+        </form>
+
+        <p id="quoteSuccess" class="text-green-600 text-sm mt-3 hidden">
+            ✔ Your quote request has been sent successfully!
+        </p>
+
+    </div>
+
+
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-feather="cpu" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="text-xl font-semibold">TechTide<span class="text-primary">Hub</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Premium wholesale technology solutions for businesses worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="teleprompters.html" class="hover:text-primary transition-colors">Teleprompters</a></li>
+                        <li><a href="laptops.html" class="hover:text-primary transition-colors">Laptops</a></li>
+                        <li><a href="accessories.html" class="hover:text-amber-400 transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="index.html#why-us" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Enter email" class="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 outline-none focus:border-primary">
+                        <button class="px-4 py-2 bg-primary rounded-lg hover:bg-blue-600 transition-colors">
+                            <i data-feather="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">&copy; 2025 TechTide Hub. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modalContainer"></div>
+
+    <!-- COMPARE DRAWER -->
+<div id="compareDrawer"
+     class="fixed bottom-6 right-6 w-80 bg-white shadow-2xl rounded-2xl border p-4 hidden z-50">
+
+    <h3 class="text-lg font-semibold text-accent mb-3">Compare Products</h3>
+
+    <div id="compareList" class="space-y-3"></div>
+
+    <button id="openComparePage"
+        class="w-full mt-4 bg-primary text-white py-2 rounded-lg font-medium">
+        Compare Now (Max 3)
+    </button>
+</div>
+
+<script src="components/js/comparison.js"></script>
+<script>
+fetch("quote-modal.html")
+  .then(res => res.text())
+  .then(html => document.getElementById("modalContainer").innerHTML = html);
+</script>
+    <script src="components/js/teleprompters.js"></script>
+    <!-- <script src="components/navbar.js"></script> -->
+    <script src="components/js/script.js"></script>
+    <script src="components/js/search.js"></script>
+    
+    <script>
+        feather.replace();
+        
+        // Subcategory filtering
+        const filterBtns = document.querySelectorAll('.subcategory-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-600');
+                });
+                btn.classList.add('active', 'bg-primary', 'text-white');
+                btn.classList.remove('bg-white', 'text-gray-600');
+                
+                // Filter products
+                const filter = btn.dataset.filter;
+                productCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

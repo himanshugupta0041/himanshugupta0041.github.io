@@ -1,0 +1,834 @@
+[
+  {
+    "id": "studio-pro-x1",
+    "name": "Studio Pro X1",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1099",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 12,999",
+    "oldPrice": "₨ 15,999", 
+    "discount": "21% OFF",
+
+    "short": "19-inch broadcast teleprompter with HD monitor.",
+    "description": "A professional-grade 19-inch broadcast teleprompter designed for live events, interviews, and studio-quality production. Features ultra-clear 70/30 beam splitter glass and robust mounting options.",
+
+    "images": ["images/tele1.png", "images/tele2.png", "images/tele3.png"],
+
+    "highlights": [
+      "19-inch HD Display",
+      "Adjustable Pro Glass",
+      "Metal Body Frame",
+      "Professional Studio Mount"
+    ],
+
+    "shipping": [
+      "Courier: 2–4 days",
+      "UPS: 4–6 days",
+      "International Shipping: 5–12 days"
+    ],
+
+    "features": [
+      "Sturdy metal body construction",
+      "Ultra-clear beamsplitter glass",
+      "Universal studio mounting system",
+      "HDMI & USB connectivity"
+    ],
+
+    "specs": [
+      ["Glass Type", "70/30 Beam Splitter"],
+      ["Monitor", "19-inch HD"],
+      ["Weight", "6.5 kg"],
+      ["Ports", "HDMI, USB, Power"]
+    ]
+  },
+
+  {
+    "id": "broadcast-master-22",
+    "name": "Broadcast Master 22",
+    "brand": "ARS Solutions",
+    "sku": "TPX-2201",
+    "category": "teleprompters",
+    "availability": "Out of Stock",
+
+    "price": "₨ 14,999",
+    "oldPrice": "₨ 16,999",
+    "discount": "12% OFF",
+
+    "short": "22-inch 4K pro-grade teleprompter with ultra-wide viewing angles.",
+    "description": "The Broadcast Master 22 provides unmatched clarity for professional TV studio broadcasting. Equipped with a 4K display and advanced wide-angle visibility.",
+
+    "images": ["images/tele2.png"],
+
+    "highlights": [
+      "22-inch 4K UHD Monitor",
+      "Ultra-wide Viewing Angle",
+      "Studio-grade build quality"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "Premium reinforced frame",
+      "4K resolution for crystal clarity",
+      "Wide visibility for multi-camera setups"
+    ],
+
+    "specs": [
+      ["Monitor", "22-inch 4K"],
+      ["Viewing Angle", "180° Wide"]
+    ]
+  },
+
+  {
+    "id": "presidential-series-24",
+    "name": "Presidential Series 24",
+    "brand": "ARS Solutions",
+    "sku": "TPX-2405",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 39,999",
+    "oldPrice": "₨ 49,999",
+    "discount": "20% OFF",
+
+    "short": "24-inch pro teleprompter designed for high-profile events and executives.",
+    "description": "Top-tier teleprompter made for presidential speeches, corporate summits, and high-profile presentations.",
+
+    "images": ["images/tele3.png"],
+
+    "highlights": [
+      "24-inch Display",
+      "Premium Presidential Glass",
+      "Event-grade durability"
+    ],
+
+    "shipping": ["Courier: 3–5 days"],
+
+    "features": ["Premium clarity glass panel"],
+
+    "specs": [["Display", "24-inch"], ["Type", "Presidential"]]
+  },
+
+  {
+    "id": "event-pro-portable",
+    "name": "Event Pro Portable",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1501",
+    "category": "teleprompters",
+    "availability": "Out of Stock",
+
+    "price": "₨ 8999",
+    "oldPrice": "₨ 10000",
+    "discount": "10% OFF",
+
+    "short": "Portable foldable teleprompter ideal for on-location events.",
+    "description": "Lightweight, foldable design perfect for travel and quick setup situations.",
+
+    "images": ["images/teleprompters/telep4.png"],
+
+    "highlights": [
+      "15-inch Display",
+      "Foldable & Travel-friendly",
+      "Weighs only 8 lbs"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Travel case included"],
+
+    "specs": [["Display", "15-inch"], ["Weight", "8 lbs"]]
+  },
+
+  {
+    "id": "presenter-elite-15",
+    "name": "Presenter Elite 15",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1511",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 6,499",
+    "oldPrice": "₨ 7,999",
+    "discount": "18% OFF",
+
+    "short": "Compact 15-inch teleprompter ideal for conferences and corporate events.",
+    "description": "A lightweight and compact teleprompter with included travel case.",
+
+    "images": ["images/tele2.png"],
+
+    "highlights": ["15-inch Display", "Travel Case Included"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Compact frame"],
+
+    "specs": [["Display", "15-inch"]]
+  },
+
+  {
+    "id": "confidence-monitor-17",
+    "name": "Confidence Monitor 17",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1790",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 7,499",
+    "oldPrice": "₨ 9,999",
+    "discount": "25% OFF",
+
+    "short": "17-inch stage confidence monitor with reverse text display.",
+    "description": "Perfect for live stage events, reverse mirror support allows presenters to read naturally.",
+
+    "images": ["images/teleprompters/telep5.png"],
+
+    "highlights": ["17-inch Display", "Reverse Mirror Supported"],
+
+    "shipping": ["Courier: 2–5 days"],
+
+    "features": ["Stage-ready unit"],
+
+    "specs": [["Display", "17-inch"], ["Feature", "Reverse Mirror"]]
+  },
+
+  {
+    "id": "ipad-pro-teleprompter",
+    "name": "iPad Pro Teleprompter",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1200",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 3,999",
+    "oldPrice": "₨ 4,999",
+    "discount": "20% OFF",
+
+    "short": "iPad-based lightweight mobile teleprompter.",
+    "description": "Perfect for vloggers, mobile journalists, and small creators.",
+
+    "images": ["images/teleprompters/telep6.png"],
+
+    "highlights": ["Supports 12.9-inch iPad", "Bluetooth remote"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Bluetooth remote support"],
+
+    "specs": [["Device Support", "12.9-inch iPad"], ["Connectivity", "Bluetooth"]]
+  },
+
+  {
+    "id": "smartphone-mini-prompter",
+    "name": "Smartphone Mini Prompter",
+    "brand": "ARS Solutions",
+    "sku": "TPX-1011",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "₨ 49,999",
+    "oldPrice": "₨ 52,000",
+    "discount": "Budget Model",
+
+    "short": "Pocket-sized teleprompter for vloggers and small creators.",
+    "description": "Perfect for quick shoots, ultra-portable with universal smartphone compatibility.",
+
+    "images": ["images/teleprompters/telep7.png"],
+
+    "highlights": ["Universal Mount", "App Included"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Ultra portable"],
+
+    "specs": [["Compatibility", "Universal"], ["App", "Included"]]
+  },
+
+  {
+    "id": "bluetooth-remote-control",
+    "name": "Bluetooth Remote Control",
+    "brand": "ARS Solutions",
+    "sku": "TPX-5001",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "$79",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "Wireless remote for teleprompters with play/pause/scroll control.",
+    "description": "Rechargeable Bluetooth remote with 30m range.",
+
+    "images": ["images/tele3.png"],
+
+    "highlights": ["30m Range", "Rechargeable Battery"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Wireless control"],
+
+    "specs": [["Range", "30m"], ["Battery", "Rechargeable"]]
+  },
+
+  {
+    "id": "heavy-duty-tripod-mount",
+    "name": "Heavy Duty Tripod Mount",
+    "brand": "ARS Solutions",
+    "sku": "TPX-7201",
+    "category": "teleprompters",
+    "availability": "In Stock",
+
+    "price": "$199",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "Pro-grade tripod mount with 360° rotation.",
+    "description": "Heavy-duty build for large teleprompters.",
+
+    "images": ["images/teleprompters/telep8.png", "images/teleprompters/telep9.png"],
+
+    "highlights": ["Universal Mount", "360° Rotation"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["360-degree swivel"],
+
+    "specs": [["Rotation", "360°"], ["Compatibility", "Universal"]]
+  },
+
+  {
+    "id": "lenovo-thinkpad-t14",
+    "name": "Lenovo ThinkPad T14",
+    "brand": "Lenovo",
+    "sku": "LN-T14-2024",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$1,199",
+    "oldPrice": "$1,399",
+    "discount": "15% OFF",
+
+    "short": "14-inch business laptop with AMD Ryzen 7 Pro.",
+    "description": "A premium business laptop built for durability, security, and performance. Ideal for enterprise workflows.",
+
+    "images": ["images/laptops/laptop6.png", "images/laptops/laptop5.png"],
+
+    "highlights": [
+      "Ryzen 7 PRO Processor",
+      "Fingerprint Sensor",
+      "Business-Class Security"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "AMD Ryzen 7 PRO",
+      "14-inch IPS Display",
+      "Backlit Keyboard",
+      "Military-grade build"
+    ],
+
+    "specs": [
+      ["Processor", "AMD Ryzen 7 PRO"],
+      ["RAM", "16GB DDR4"],
+      ["Storage", "512GB SSD"],
+      ["Display", "14-inch IPS"],
+      ["Graphics", "Integrated Radeon"]
+    ]
+  },
+
+  {
+    "id": "apple-macbook-air-m1",
+    "name": "MacBook Air M1",
+    "brand": "Apple",
+    "sku": "AP-MBA-M1",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$999",
+    "oldPrice": "$1,099",
+    "discount": "10% OFF",
+
+    "short": "The classic 13-inch MacBook Air powered by Apple M1.",
+    "description": "Ultra-fast performance, premium design, and long-lasting battery life.",
+
+    "images": ["images/laptop1.png", "images/laptop2.png"],
+
+    "highlights": [
+      "Apple M1 Chip",
+      "Retina Display",
+      "18-hour Battery"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Fanless design", "Lightweight", "Backlit keyboard"],
+
+    "specs": [
+      ["Processor", "Apple M1"],
+      ["RAM", "8GB Unified"],
+      ["Storage", "256GB SSD"],
+      ["Display", "13.3-inch Retina"],
+      ["Battery", "18 Hours"]
+    ]
+  },
+
+  {
+    "id": "hp-elitebook-840",
+    "name": "HP EliteBook 840 G9",
+    "brand": "HP",
+    "sku": "HP-840-G9",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$1,299",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "14-inch flagship business laptop with Intel i7 12th Gen.",
+    "description": "Built for enterprise with high performance, durability, and modern security features.",
+
+    "images": ["images/laptop1.png", "images/laptop2.png"],
+
+    "highlights": [
+      "Intel Core i7 12th Gen",
+      "Wi-Fi 6E",
+      "Fingerprint + Face Login"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "Smart security",
+      "Premium magnesium body"
+    ],
+
+    "specs": [
+      ["Processor", "Intel i7-1260P"],
+      ["RAM", "16GB DDR5"],
+      ["Storage", "512GB SSD"],
+      ["Display", "14-inch IPS"],
+      ["Graphics", "Intel Iris Xe"]
+    ]
+  },
+
+  {
+    "id": "dell-latitude-7420",
+    "name": "Dell Latitude 7420",
+    "brand": "Dell",
+    "sku": "DL-7420",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$1,349",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "14-inch executive laptop with Intel Core i7.",
+    "description": "Made for professionals who need a perfect blend of portability and performance.",
+
+    "images": ["images/laptops/laptop8.png", "images/laptops/laptop5.png"],
+
+    "highlights": ["Premium Build", "Thunderbolt 4"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Lightweight body"],
+
+    "specs": [
+      ["Processor", "Intel Core i7 11th Gen"],
+      ["RAM", "16GB"],
+      ["Storage", "512GB SSD"],
+      ["Display", "14-inch FHD"],
+      ["Graphics", "Intel Iris Xe"]
+    ]
+  },
+
+  {
+    "id": "acer-nitro-5",
+    "name": "Acer Nitro 5",
+    "brand": "Acer",
+    "sku": "AC-NTR-5",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$899",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "Gaming laptop with RTX 3050 graphics.",
+    "description": "Amazing gaming performance at an affordable price.",
+
+    "images": ["images/laptops/laptop9.png"],
+
+    "highlights": ["RGB Keyboard", "High-performance cooling"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Dual-Fan Cooling"],
+
+    "specs": [
+      ["Processor", "Intel i5 11th Gen"],
+      ["RAM", "8GB DDR4"],
+      ["Storage", "512GB SSD"],
+      ["Graphics", "NVIDIA RTX 3050"],
+      ["Display", "15.6-inch 144Hz"]
+    ]
+  },
+
+  {
+    "id": "asus-rog-strix-g15",
+    "name": "ASUS ROG Strix G15",
+    "brand": "ASUS",
+    "sku": "AS-ROG-G15",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$1,499",
+    "oldPrice": "$1,699",
+    "discount": "12% OFF",
+
+    "short": "Premium gaming laptop with Ryzen 7 and RTX 3060.",
+    "description": "A beast for high-end gaming and heavy workloads.",
+
+    "images": ["images/laptops/laptop10.png"],
+
+    "highlights": ["RGB Strip Lighting", "High Refresh Display"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Advanced cooling"],
+
+    "specs": [
+      ["Processor", "Ryzen 7 5800H"],
+      ["RAM", "16GB DDR4"],
+      ["Storage", "512GB SSD"],
+      ["Graphics", "RTX 3060"],
+      ["Display", "15.6-inch 165Hz"]
+    ]
+  },
+
+  {
+    "id": "lenovo-ideapad-3",
+    "name": "Lenovo IdeaPad 3",
+    "brand": "Lenovo",
+    "sku": "LN-IP3",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$499",
+    "oldPrice": "$599",
+    "discount": "17% OFF",
+
+    "short": "Affordable laptop for students and light usage.",
+    "description": "Perfect for browsing, homework, and everyday use.",
+
+    "images": ["images/laptops/laptop6.png"],
+
+    "highlights": ["Value for Money"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Lightweight design"],
+
+    "specs": [
+      ["Processor", "Intel i3 11th Gen"],
+      ["RAM", "8GB"],
+      ["Storage", "256GB SSD"],
+      ["Display", "15.6-inch HD"]
+    ]
+  },
+
+  {
+    "id": "apple-macbook-pro-m2",
+    "name": "MacBook Pro M2",
+    "brand": "Apple",
+    "sku": "AP-MBP-M2",
+    "category": "laptops",
+    "availability": "In Stock",
+
+    "price": "$1,599",
+    "oldPrice": "$1,799",
+    "discount": "11% OFF",
+
+    "short": "Pro-level laptop with M2 chip and long battery life.",
+    "description": "Top-tier performance for professionals and creators.",
+
+    "images": ["images/laptops/laptop7.png"],
+
+    "highlights": ["Liquid Retina Display"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["ProMotion Display"],
+
+    "specs": [
+      ["Processor", "Apple M2"],
+      ["RAM", "16GB Unified"],
+      ["Storage", "512GB SSD"],
+      ["Display", "14-inch Liquid Retina"]
+    ]
+  },
+  {
+    "id": "hp-probook-enterprise",
+    "name": "HP ProBook Enterprise 650",
+    "brand": "HP",
+    "sku": "HP-PB-650",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$899",
+    "oldPrice": "$999",
+    "discount": "10% OFF",
+
+    "short": "15.6-inch enterprise laptop with Intel i7 performance.",
+    "description": "A secure business laptop with enterprise-grade durability, powerful performance, and long battery life. Perfect for offices and corporate workflows.",
+
+    "images": ["images/itproducts/keyboard3.png", "images/itproducts/keyboard4.png"],
+
+    "highlights": [
+      "Intel Core i7",
+      "Business-grade Build",
+      "Fingerprint Sensor"
+    ],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "Intel i7 Processor",
+      "15.6-inch FHD Display",
+      "Backlit Keyboard",
+      "Wi-Fi 6 Support"
+    ],
+
+    "specs": [
+      ["Processor", "Intel i7-1165G7"],
+      ["RAM", "16GB DDR4"],
+      ["Storage", "512GB SSD"],
+      ["Display", "15.6-inch FHD"],
+      ["Graphics", "Intel Iris Xe"]
+    ]
+  },
+
+  {
+    "id": "ultraslim-notebook-15",
+    "name": "UltraSlim Notebook 15",
+    "brand": "Dell",
+    "sku": "DE-ULTRA-15",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$699",
+    "oldPrice": "$799",
+    "discount": "12% OFF",
+
+    "short": "Ultra-lightweight 15.6-inch laptop for everyday work.",
+    "description": "A sleek, portable 15-inch notebook designed for professionals, students, and office users.",
+
+    "images": ["images/itproducts/mouse1.png"],
+
+    "highlights": ["Lightweight", "Fast Charging"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "Intel Core i5",
+      "Slim 1.5kg Body",
+      "Fast Charging"
+    ],
+
+    "specs": [
+      ["Processor", "Intel i5 10th Gen"],
+      ["RAM", "8GB DDR4"],
+      ["Storage", "512GB SSD"],
+      ["Display", "15.6-inch FHD"]
+    ]
+  },
+
+  {
+    "id": "precision-mouse-pro",
+    "name": "Precision Mouse Pro",
+    "brand": "Logitech",
+    "sku": "LG-PM-500",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$49",
+    "oldPrice": "$59",
+    "discount": "17% OFF",
+
+    "short": "Wireless ergonomic precision mouse.",
+    "description": "A premium ergonomic mouse designed for precision, comfort, and productivity.",
+
+    "images": ["images/itproducts/mouse2.png"],
+
+    "highlights": ["Ergonomic Design", "Silent Clicks"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Bluetooth + USB", "Silent Scroll Wheel"],
+
+    "specs": [
+      ["Connectivity", "Bluetooth 5.0"],
+      ["Battery", "2 Months"],
+      ["Sensor", "High Precision Optical"]
+    ]
+  },
+
+  {
+    "id": "mechanical-keyboard-rgb",
+    "name": "Mechanical Keyboard RGB",
+    "brand": "Redragon",
+    "sku": "RD-RGB-900",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$89",
+    "oldPrice": "$99",
+    "discount": "10% OFF",
+
+    "short": "Full RGB mechanical keyboard for gaming & office use.",
+    "description": "RGB mechanical keyboard with high-response switches and durable build.",
+
+    "images": ["images/itproducts/keyboard3.png"],
+
+    "highlights": ["RGB Backlight", "Blue Switches"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": [
+      "Mechanical switches",
+      "Programmable Keys",
+      "Wrist Rest Included"
+    ],
+
+    "specs": [
+      ["Switch Type", "Blue"],
+      ["Backlight", "Full RGB"],
+      ["Connection", "USB 2.0"]
+    ]
+  },
+
+  {
+    "id": "compact-usb-c-hub",
+    "name": "Compact USB-C Hub",
+    "brand": "Baseus",
+    "sku": "BS-HUB-7IN1",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$39",
+    "oldPrice": "",
+    "discount": "",
+
+    "short": "7-in-1 USB-C hub for laptops and tablets.",
+    "description": "A compact docking hub that expands your USB-C port to HDMI, USB, SD card and more.",
+
+    "images": ["images/itproducts/mouse4.png"],
+
+    "highlights": ["4K HDMI", "Fast USB Ports"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["4K HDMI Output", "PD Fast Charging"],
+
+    "specs": [
+      ["Ports", "HDMI, 3×USB 3.0, SD, MicroSD"],
+      ["Charging", "PD 100W"]
+    ]
+  },
+
+  {
+    "id": "wireless-keyboard-mini",
+    "name": "Wireless Keyboard Mini",
+    "brand": "Logitech",
+    "sku": "LOGI-MINI-2024",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$59",
+    "oldPrice": "$69",
+    "discount": "14% OFF",
+
+    "short": "Compact wireless keyboard for portability.",
+    "description": "A lightweight wireless keyboard ideal for travel, laptops and tablets.",
+
+    "images": ["images/itproducts/keyboard3.png"],
+
+    "highlights": ["Ultra Compact", "Long Battery"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Bluetooth", "Silent Keys"],
+
+    "specs": [
+      ["Connection", "Bluetooth 5.1"],
+      ["Battery Life", "6 Months"]
+    ]
+  },
+
+  {
+    "id": "gaming-mouse-rgb",
+    "name": "Gaming Mouse RGB",
+    "brand": "Redgear",
+    "sku": "RG-GM-RGB",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$35",
+    "oldPrice": "$45",
+    "discount": "22% OFF",
+
+    "short": "RGB gaming mouse with adjustable DPI.",
+    "description": "Responsive gaming mouse with 7-color RGB breathing effect.",
+
+    "images": ["images/itproducts/mouse3.png"],
+
+    "highlights": ["RGB Lighting", "Adjustable DPI"],
+
+    "shipping": ["Courier: 2–4 days"],
+
+    "features": ["Breathing RGB", "Ergonomic Body"],
+
+    "specs": [
+      ["DPI Range", "800–7200"],
+      ["Buttons", "6"]
+    ]
+  },
+
+  {
+    "id": "workstation-desktop-pro",
+    "name": "Workstation Desktop Pro",
+    "brand": "Dell",
+    "sku": "DELL-WS-PRO",
+    "category": "it-products",
+    "availability": "In Stock",
+
+    "price": "$1,499",
+    "oldPrice": "$1,799",
+    "discount": "18% OFF",
+
+    "short": "High-performance workstation desktop.",
+    "description": "Professional workstation built for 3D rendering, virtualization, office servers, and enterprise workloads.",
+
+    "images": ["images/itproducts/keyboard3.png"],
+
+    "highlights": ["Xeon CPU Option", "ECC RAM"],
+
+    "shipping": ["Courier: 3–5 days"],
+
+    "features": [
+      "High Airflow Case",
+      "Upgradable Components"
+    ],
+
+    "specs": [
+      ["Processor", "Intel Core i7 / Xeon"],
+      ["RAM", "32GB ECC"],
+      ["Storage", "1TB SSD"],
+      ["Graphics", "Quadro / RTX"],
+      ["Power", "750W Gold PSU"]
+    ]
+  }
+]

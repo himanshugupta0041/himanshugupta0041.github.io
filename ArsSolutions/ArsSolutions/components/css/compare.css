@@ -1,0 +1,72 @@
+/* ===== Compare Table Wrapper ===== */
+#compareTable {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== Base Table Styling ===== */
+#compareTable table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Row */
+#compareTable th {
+    background: #f8fafc;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    text-align: left;
+}
+
+/* Feature Column */
+#compareTable td:first-child {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #334155;
+    width: 220px;
+}
+
+/* Table Cells */
+#compareTable td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+    color: #455a64;
+}
+
+/* Each product column */
+#compareTable td:not(:first-child) {
+    font-size: 15px;
+}
+
+/* Specs block inside table */
+#compareTable td div {
+    margin-bottom: 6px;
+}
+
+/* Highlight price */
+#compareTable td .price {
+    color: #0ea5e9;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ===== Responsive Table (Mobile Scrollable) ===== */
+@media (max-width: 768px) {
+    #compareTable {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #compareTable table {
+        font-size: 14px;
+    }
+    #compareTable th, #compareTable td {
+        padding: 10px;
+    }
+}

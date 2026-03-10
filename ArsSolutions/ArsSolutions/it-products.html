@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Products & Accessories – ARS Solutions</title>
+
+    <link rel="stylesheet" href="components/css/style.css">
+    <link rel="icon" href="images/ARSSolutionsLogo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#64748b',
+                        accent: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-2">
+                <img src="images/ARSSolutionsLogo.png" class="h-8" alt="ARS Solutions">
+                <span class="text-xl font-semibold text-accent">
+                    <span class="text-primary">ARS</span> SOLUTIONS
+                </span>
+            </div>
+
+            <!-- DESKTOP SEARCH -->
+            <div class="relative hidden md:block">
+                <input id="search-input" type="text" placeholder="Search products..."
+                       class="px-4 py-2 w-64 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                <div id="search-results"
+                     class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-2 hidden max-h-64 overflow-y-auto z-50"></div>
+            </div>
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden md:flex items-center gap-8">
+
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium">Home</a>
+
+                <!-- CATEGORIES DROPDOWN -->
+                <div class="relative group">
+                    <div class="flex items-center gap-1 text-gray-600 hover:text-primary font-medium cursor-pointer py-5">
+                        Categories
+                        <i data-feather="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 border border-gray-100">
+                        <div class="grid grid-cols-3">
+
+                            <a href="teleprompters.html" class="p-5 hover:bg-blue-50/50 border-r border-gray-100 group/item">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-primary group-hover/item:scale-110 transition">
+                                    <i data-feather="monitor" class="w-6 h-6 text-primary group-hover/item:text-white"></i>
+                                </div>
+                                <h4 class="font-semibold text-accent group-hover/item:text-primary">Teleprompters</h4>
+                                <p class="text-xs text-gray-500 mb-3">Studio & broadcast gear</p>
+                            </a>
+
+                            <a href="laptop_categories.html" class="p-5 hover:bg-emerald-50/50 border-r border-gray-100 group/item">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-emerald-500 group-hover/item:scale-110 transition">
+                                    <i data-feather="laptop" class="w-6 h-6 text-emerald-500 group-hover/item:text-white"></i>
+                                </div>
+                                <h4 class="font-semibold text-accent group-hover/item:text-emerald-500">Laptops</h4>
+                                <p class="text-xs text-gray-500 mb-3">Enterprise laptops</p>
+                            </a>
+
+                            <a href="it-products.html" class="p-5 hover:bg-amber-50/50 group/item">
+                                <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-amber-500 group-hover/item:scale-110 transition">
+                                    <i data-feather="cpu" class="w-6 h-6 text-amber-500 group-hover/item:text-white"></i>
+                                </div>
+                                <h4 class="font-semibold text-accent group-hover/item:text-amber-500">IT Products</h4>
+                                <p class="text-xs text-gray-500 mb-3">Accessories & peripherals</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="aboutus.html" class="text-gray-600 hover:text-primary font-medium">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary font-medium">Contact</a>
+
+                <a href="contact.html" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-blue-600 font-medium shadow-lg shadow-primary/25">
+                    Get Quote
+                </a>
+            </div>
+
+            <!-- MOBILE SEARCH BTN -->
+            <button id="mobileSearchBtn" class="md:hidden text-gray-600">
+                <i data-feather="search" class="w-6 h-6"></i>
+            </button>
+
+            <!-- MOBILE MENU BTN -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-600">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+        <div class="px-4 py-3 space-y-2">
+
+            <a href="index.html" class="block py-2 text-gray-600">Home</a>
+
+            <div>
+                <span class="text-gray-800 font-medium">Categories</span>
+                <div class="pl-4 border-l-2 border-gray-100 space-y-2 mt-1">
+                    <a href="teleprompters.html" class="text-gray-600 text-sm block">Teleprompters</a>
+                    <a href="laptop_categories.html" class="text-gray-600 text-sm block">Laptops</a>
+                    <a href="it-products.html" class="text-gray-600 text-sm block">IT Products</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
+            <a href="contact.html" class="block py-2 text-primary font-medium">Get Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE SEARCH POPUP -->
+<div id="mobileSearchPopup" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-start justify-center p-4 z-[9999]">
+    <div class="w-full max-w-md bg-white rounded-xl p-4 mt-20 relative">
+
+        <div class="flex items-center gap-2">
+            <input id="mobileSearchInput" type="text" placeholder="Search products..."
+                   class="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+            <button id="mobileSearchClose">
+                <i data-feather="x" class="w-6 h-6 text-gray-600"></i>
+            </button>
+        </div>
+
+        <div id="mobileSearchResults"
+             class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-1 hidden max-h-60 overflow-y-auto z-[99999]">
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- MOBILE FILTER POPUP -->
+<div id="mobileFilterPopup"
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-end z-[9999]">
+
+    <div class="w-full bg-white rounded-t-2xl p-5 
+                max-h-[85vh] overflow-y-auto shadow-xl">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-4 sticky top-0 bg-white pb-3">
+            <h2 class="text-xl font-semibold text-accent">Filters</h2>
+            <button id="closeMobileFilters">
+                <i data-feather="x" class="w-6 h-6 text-gray-600"></i>
+            </button>
+        </div>
+
+        <!-- SCROLLABLE CONTENT -->
+        <div class="space-y-6">
+
+            <!-- BRAND -->
+            <div>
+                <h3 class="font-semibold mb-2">Brand</h3>
+                <div id="mobile-filter-brand"></div>
+            </div>
+
+            <!-- AVAILABILITY -->
+            <div>
+                <h3 class="font-semibold mb-2">Availability</h3>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" class="mobile-filter-availability" value="In Stock">
+                    <span>In Stock</span>
+                </label>
+            </div>
+
+            <!-- PRICE -->
+            <div>
+                <h3 class="font-semibold mb-2">Price</h3>
+                <input id="mobile-minPrice" type="number" placeholder="Min" 
+                       class="w-full border rounded px-3 py-1 mb-2">
+                <input id="mobile-maxPrice" type="number" placeholder="Max"
+                       class="w-full border rounded px-3 py-1">
+            </div>
+
+            <!-- TYPE -->
+            <div>
+                <h3 class="font-semibold mb-2">Type</h3>
+                <div id="mobile-filter-type"></div>
+            </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="mt-6 flex gap-3 sticky bottom-0 bg-white pt-3 pb-1">
+            <button id="resetMobileFilters" 
+                    class="w-1/2 bg-gray-200 py-2 rounded">Reset</button>
+            <button id="applyMobileFilters" 
+                    class="w-1/2 bg-primary text-white py-2 rounded">Apply</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="pt-28 pb-4 max-w-7xl mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold text-accent">IT Products & Accessories</h1>
+    <p class="text-gray-600 mt-2 text-lg">
+        Enterprise-grade laptops, peripherals, accessories & workstations.
+    </p>
+</section>
+
+<!-- MOBILE FILTER BUTTON -->
+<div class="md:hidden px-4">
+    <button id="openMobileFilters"
+            class="w-full bg-primary text-white py-2.5 rounded-lg flex items-center justify-center gap-2">
+        <i data-feather="sliders" class="w-4 h-4"></i>
+        Filters
+    </button>
+</div>
+
+<!-- MAIN WRAPPER -->
+<section class="max-w-7xl mx-auto px-4 py-10 flex gap-10">
+
+    <!-- SIDEBAR -->
+    <aside class="hidden md:block w-64 bg-white shadow rounded-xl p-5 h-fit sticky top-28">
+
+        <h2 class="text-xl font-semibold text-accent mb-4">Filters</h2>
+
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Brand</h3>
+            <div id="filter-brand"></div>
+        </div>
+
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Availability</h3>
+            <label class="flex items-center gap-2">
+                <input type="checkbox" class="filter-availability" value="In Stock">
+                <span>In Stock</span>
+            </label>
+        </div>
+
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Price</h3>
+            <input id="minPrice" type="number" placeholder="Min"
+                   class="w-full mb-2 border rounded px-3 py-1">
+            <input id="maxPrice" type="number" placeholder="Max"
+                   class="w-full border rounded px-3 py-1">
+        </div>
+
+        <div class="mb-6">
+            <h3 class="font-semibold mb-2">Type</h3>
+            <div id="filter-type"></div>
+        </div>
+
+        <button id="resetFilters"
+                class="w-full bg-gray-200 hover:bg-gray-300 py-2 rounded">Reset Filters</button>
+
+    </aside>
+
+    <!-- PRODUCT GRID -->
+    <div id="it-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1"></div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-accent text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="grid md:grid-cols-4 gap-8 mb-10">
+
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-feather="cpu" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-semibold">TechTide<span class="text-primary">Hub</span></span>
+                </div>
+                <p class="text-gray-400 text-sm">Premium wholesale technology solutions for businesses worldwide.</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Products</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="teleprompters.html" class="hover:text-primary transition">Teleprompters</a></li>
+                    <li><a href="laptop_categories.html" class="hover:text-primary transition">Laptops</a></li>
+                    <li><a href="it-products.html" class="hover:text-primary transition">IT Accessories</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Company</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                    <li><a href="index.html#why-us" class="hover:text-primary transition">About Us</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Newsletter</h4>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Enter email"
+                           class="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 outline-none focus:border-primary">
+                    <button class="bg-primary px-4 py-2 rounded-lg hover:bg-blue-600">
+                        <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-gray-400 text-sm">&copy; 2026 ARS Solutions. All rights reserved.</p>
+            <div class="flex gap-4">
+                <i data-feather="linkedin" class="w-5 h-5 text-gray-400 hover:text-primary"></i>
+                <i data-feather="twitter" class="w-5 h-5 text-gray-400 hover:text-primary"></i>
+                <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-primary"></i>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- JS FILES -->
+<script src="components/js/it-products.js"></script>
+<script src="components/js/script.js"></script>
+<script src="components/js/search.js"></script>
+
+<script>feather.replace();</script>
+
+</body>
+</html>

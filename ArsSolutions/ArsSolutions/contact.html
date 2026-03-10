@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us – ARS Solutions</title>
+    <link rel="stylesheet" href="components/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#64748b',
+                        accent: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<!-- <div id="navbar-placeholder"></div> -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <img class="site-logo" src="images/ARSSolutionsLogo.png" alt="ARS Solutions" class="h-8 w-auto">
+                    <span class="text-xl font-semibold text-accent"><span class="text-primary">ARS SOLUTIONS</span></span>
+                </div>
+                <div class="relative hidden md:block">
+    <input 
+        id="search-input"
+        type="text" 
+        placeholder="Search products..."
+        class="px-4 py-2 w-64 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+    >
+
+    <!-- Search Results -->
+    <div 
+        id="search-results" 
+        class="absolute left-0 right-0 bg-white border rounded-lg shadow-lg mt-2 hidden max-h-64 overflow-y-auto z-50"
+    ></div>
+</div>
+                <div class="hidden md:flex items-center gap-8">
+                    <div class="relative group">
+                        <a href="#categories" class="text-gray-600 hover:text-primary transition-colors font-medium flex items-center gap-1 py-5">
+                            Categories
+                            <i data-feather="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Categories Mega Menu -->
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
+                            <div class="grid grid-cols-3 gap-0">
+                                <!-- Teleprompters -->
+                                <a href="teleprompters.html" class="p-5 hover:bg-blue-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-primary group-hover/item:scale-110 transition-all">
+                                        <i data-feather="monitor" class="w-6 h-6 text-primary group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-primary transition-colors">Teleprompters</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Studio & broadcast equipment</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/technology/200x150/101" alt="Teleprompters" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                <!-- Laptops -->
+                                <a href="laptop_categories.html" class="p-5 hover:bg-emerald-50/50 transition-colors group/item border-r border-gray-100">
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-emerald-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="laptop" class="w-6 h-6 text-emerald-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-emerald-500 transition-colors">Laptops</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Enterprise computing solutions</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/office/200x150/202" alt="Laptops" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                                <!-- Accessories -->
+                                <a href="it-products.html" class="p-5 hover:bg-amber-50/50 transition-colors group/item">
+                                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-3 group-hover/item:bg-amber-500 group-hover/item:scale-110 transition-all">
+                                        <i data-feather="mouse-pointer" class="w-6 h-6 text-amber-500 group-hover/item:text-white transition-colors"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-accent mb-1 group-hover/item:text-amber-500 transition-colors">Accessories</h4>
+                                    <p class="text-gray-500 text-xs mb-3">Mice, keyboards & peripherals</p>
+                                    <div class="relative h-24 rounded-lg overflow-hidden">
+                                        <img src="https://static.photos/workspace/200x150/303" alt="Accessories" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+</div>
+                    <a href="#products" class="text-gray-600 hover:text-primary transition-colors font-medium">Products</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-primary transition-colors font-medium">Why Us</a>
+                    <a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-blue-600 transition-all font-medium shadow-lg shadow-primary/25">Get Quote</a>
+                </div>
+<button class="md:hidden text-gray-600" id="mobileMenuBtn">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobileMenu">
+            <div class="px-4 py-3 space-y-2">
+                <div class="py-2">
+                    <span class="text-gray-800 font-medium block mb-2">Categories</span>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="teleprompters.html" class="block py-2 text-gray-600 text-sm">Teleprompters</a>
+                        <a href="laptop_categories.html" class="block py-2 text-gray-600 text-sm">Laptops</a>
+                        <a href="accessories.html" class="block py-2 text-gray-600 text-sm">Accessories</a>
+                    </div>
+                </div>
+<a href="#products" class="block py-2 text-gray-600">Products</a>
+                <a href="#why-us" class="block py-2 text-gray-600">Why Us</a>
+                <a href="#contact" class="block py-2 text-primary font-medium">Get Quote</a>
+            </div>
+        </div>
+</nav>
+<!-- HERO -->
+<section class="pt-32 pb-20 text-center px-4 fade-up">
+    <h1 class="text-5xl font-extrabold text-accent drop-shadow-sm">Get in Touch</h1>
+    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+        Whether you're looking for teleprompters, laptops, accessories, or enterprise solutions — 
+        our team is ready to support you with expert guidance and fast responses.
+    </p>
+</section>
+
+<!-- CONTACT CARDS -->
+<section class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 fade-up">
+
+    <div class="p-8 glass rounded-2xl contact-card text-center">
+        <div class="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <i data-feather="mail" class="w-6 h-6 text-primary"></i>
+        </div>
+        <h3 class="mt-4 text-lg font-semibold text-accent">Email Us</h3>
+        <p class="text-gray-600 text-sm mt-2">We reply within a few hours.</p>
+        <p class="mt-3 font-medium">support@arssolutions.com</p>
+    </div>
+
+    <div class="p-8 glass rounded-2xl contact-card text-center">
+        <div class="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <i data-feather="phone" class="w-6 h-6 text-primary"></i>
+        </div>
+        <h3 class="mt-4 text-lg font-semibold text-accent">Call Us</h3>
+        <p class="text-gray-600 text-sm mt-2">Mon–Fri, 10AM–6PM</p>
+        <p class="mt-3 font-medium">+91 98765 43210</p>
+    </div>
+
+    <div class="p-8 glass rounded-2xl contact-card text-center">
+        <div class="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <i data-feather="map-pin" class="w-6 h-6 text-primary"></i>
+        </div>
+        <h3 class="mt-4 text-lg font-semibold text-accent">Office</h3>
+        <p class="text-gray-600 text-sm mt-2">Karnal, Haryana</p>
+        <p class="mt-3 font-medium">India</p>
+    </div>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="max-w-4xl mx-auto mt-20 mb-10 px-4 fade-up">
+    <div class="glass rounded-3xl shadow-xl p-10 border border-white/30">
+
+        <h2 class="text-3xl font-bold text-accent mb-6 text-center">Send Us a Message</h2>
+
+        <form id="contactForm" class="space-y-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" name="name" placeholder="Your Name" required
+                    class="contact-input w-full px-4 py-3 rounded-xl">
+                <input type="email" name="email" placeholder="Email Address" required
+                    class="contact-input w-full px-4 py-3 rounded-xl">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" name="phone" placeholder="Phone Number"
+                    class="contact-input w-full px-4 py-3 rounded-xl">
+
+                <select name="interest" class="contact-input w-full px-4 py-3 rounded-xl">
+                    <option>Interested in</option>
+                    <option>Teleprompters</option>
+                    <option>Laptops</option>
+                    <option>Accessories</option>
+                    <option>Bulk Order</option>
+                </select>
+            </div>
+
+            <textarea name="message" placeholder="How can we assist you?" rows="4"
+                class="contact-input w-full px-4 py-3 rounded-xl"></textarea>
+
+            <button 
+                class="contact-submit w-full py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2">
+                Send Message <i data-feather="send"></i>
+            </button>
+        </form>
+
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="max-w-5xl mx-auto px-4 mt-16 fade-up">
+    <div class="rounded-3xl shadow-xl overflow-hidden contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405010.91128579905!2d76.76357085118231!3d28.643684717472972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e1!3m2!1sen!2sin!4v1771944436073!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-bg text-white py-16 mt-24 fade-up">
+    <div class="max-w-4xl mx-auto text-center px-6">
+
+        <h2 class="text-3xl font-bold mb-3">Get Business Insights</h2>
+        <p class="text-blue-100 mb-6">Subscribe for product updates & enterprise deals</p>
+
+        <div class="flex justify-center gap-4 max-w-lg mx-auto">
+            <input type="email" placeholder="Email address"
+                class="px-4 py-3 rounded-xl w-full text-black outline-none">
+            <button class="bg-white text-primary px-6 py-3 rounded-xl font-semibold shadow hover:bg-gray-100">
+                Subscribe
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<!-- <div id="footer-placeholder"></div> -->
+
+<!-- <script src="navbar.js"></script> -->
+<!-- <script src="footer.js"></script> -->
+
+<script>
+feather.replace();
+
+// Fade-up animation
+const observers = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+});
+document.querySelectorAll(".fade-up").forEach(el => observers.observe(el));
+</script>
+
+</body>
+</html>

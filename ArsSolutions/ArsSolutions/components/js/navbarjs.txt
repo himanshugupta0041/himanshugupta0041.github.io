@@ -1,0 +1,20 @@
+// Load navbar dynamically
+fetch("components/navbar.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("navbar-placeholder").innerHTML = html;
+    feather.replace(); // needed for icons
+
+    // Reattach mobile menu toggle
+    const mobileBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+// After navbar is inserted into DOM, now activate search
+    if (typeof initSearch === "function") {
+      initSearch();
+    }
+
+    mobileBtn?.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });

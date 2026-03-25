@@ -170,7 +170,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Image loading placeholder */
+
 img {
     background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
 }

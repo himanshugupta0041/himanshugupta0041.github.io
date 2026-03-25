@@ -63,7 +63,7 @@ $("productForm").onsubmit = (e) => {
         category: $("product-category").value,
         price: $("product-price").value,
         short: $("product-short").value,
-        images: [] // image upload logic below
+        images: [] 
     };
 
     // Upload files → generate URLs

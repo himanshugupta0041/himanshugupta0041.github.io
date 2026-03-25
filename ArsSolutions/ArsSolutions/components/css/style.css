@@ -111,7 +111,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

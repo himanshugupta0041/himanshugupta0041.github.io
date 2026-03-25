@@ -127,7 +127,7 @@ html {
     animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Slider drag cursor */
+
 .slider-container {
     cursor: grab;
 }

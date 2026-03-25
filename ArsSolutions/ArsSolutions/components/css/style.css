@@ -145,7 +145,7 @@ html {
     transform: translateY(-4px);
 }
 
-/* Form focus animations */
+
 input:focus, select:focus, textarea:focus {
     transform: translateY(-1px);
 }

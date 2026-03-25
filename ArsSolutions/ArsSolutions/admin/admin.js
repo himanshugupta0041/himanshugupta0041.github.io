@@ -66,7 +66,7 @@ $("productForm").onsubmit = (e) => {
         images: [] 
     };
 
-    // Upload files → generate URLs
+   
     const files = $("product-images").files;
     for (let f of files) {
         const url = "../images/uploaded/" + f.name;

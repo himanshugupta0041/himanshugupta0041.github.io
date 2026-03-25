@@ -72,7 +72,7 @@ $("productForm").onsubmit = (e) => {
         const url = "../images/uploaded/" + f.name;
         newProduct.images.push(url);
 
-        // Save image to server (requires backend)
+       
     }
 
     // Add or update

@@ -50,7 +50,7 @@ function deleteProduct(id) {
     saveChanges();
 }
 
-// Handle form submit
+
 $("productForm").onsubmit = (e) => {
     e.preventDefault();
 

@@ -75,7 +75,7 @@ $("productForm").onsubmit = (e) => {
        
     }
 
-    // Add or update
+   
     const existing = products.findIndex(p => p.id === id);
     if (existing >= 0) products[existing] = newProduct;
     else products.push(newProduct);

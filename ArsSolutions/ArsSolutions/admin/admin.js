@@ -10,7 +10,7 @@ fetch("../data/products.json")
 
 function $(id) { return document.getElementById(id); }
 
-// Render all products with Edit/Delete buttons
+
 function renderProductList() {
     const box = $("productList");
     box.innerHTML = "";

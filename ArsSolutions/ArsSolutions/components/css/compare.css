@@ -40,7 +40,7 @@
     color: #455a64;
 }
 
-/* Each product column */
+
 #compareTable td:not(:first-child) {
     font-size: 15px;
 }

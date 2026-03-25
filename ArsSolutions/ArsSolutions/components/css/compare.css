@@ -57,7 +57,7 @@
     font-weight: 700;
 }
 
-/* ===== Responsive Table (Mobile Scrollable) ===== */
+
 @media (max-width: 768px) {
     #compareTable {
         padding: 10px;

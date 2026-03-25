@@ -42,7 +42,7 @@ function editProduct(id) {
     $("product-short").value = p.short;
 }
 
-// Delete product
+
 function deleteProduct(id) {
     if (!confirm("Delete product?")) return;
 

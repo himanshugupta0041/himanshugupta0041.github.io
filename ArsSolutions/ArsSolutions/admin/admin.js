@@ -31,7 +31,7 @@ function renderProductList() {
     });
 }
 
-// Edit product
+
 function editProduct(id) {
     const p = products.find(x => x.id === id);
     $("product-id").value = p.id;

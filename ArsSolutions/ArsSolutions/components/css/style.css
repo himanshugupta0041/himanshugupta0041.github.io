@@ -96,7 +96,7 @@
 }
 
 
-/* Custom scrollbar hiding for sliders */
+
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;

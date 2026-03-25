@@ -150,7 +150,7 @@ input:focus, select:focus, textarea:focus {
     transform: translateY(-1px);
 }
 
-/* Gradient text for special headings */
+
 .gradient-text {
     background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
     -webkit-background-clip: text;

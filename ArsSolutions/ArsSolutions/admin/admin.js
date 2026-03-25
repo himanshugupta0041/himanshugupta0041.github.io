@@ -83,7 +83,7 @@ $("productForm").onsubmit = (e) => {
     saveChanges();
 };
 
-// Save updated JSON via backend
+
 function saveChanges() {
     fetch("update-json.php", {
         method: "POST",

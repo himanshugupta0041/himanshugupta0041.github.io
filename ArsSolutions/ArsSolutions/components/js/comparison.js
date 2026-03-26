@@ -2,7 +2,7 @@
 let compareItems = JSON.parse(localStorage.getItem("compareList") || "[]");
 let PRODUCT_DATA = [];
 
-// Safe references (drawer may not exist on product.html)
+
 const drawer = document.getElementById("compareDrawer");
 const listBox = document.getElementById("compareList");
 const openComparePage = document.getElementById("openComparePage");

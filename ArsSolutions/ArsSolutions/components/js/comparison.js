@@ -91,9 +91,7 @@ if (openComparePage) {
 }
 
 
-// ===============================
-// BUILD THE COMPARE PAGE TABLE
-// ===============================
+
 if (window.location.pathname.includes("compare.html")) {
 
     let COMPARE_IDS = JSON.parse(localStorage.getItem("compareList") || "[]");

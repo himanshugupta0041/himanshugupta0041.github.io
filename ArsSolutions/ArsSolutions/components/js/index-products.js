@@ -52,7 +52,7 @@ function buildSlider(trackId, items) {
 }
 
 
-// SLIDER ARROW CONTROLS
+
 function initSliders() {
     document.querySelectorAll(".slider-prev").forEach(btn => {
         btn.addEventListener("click", () => {

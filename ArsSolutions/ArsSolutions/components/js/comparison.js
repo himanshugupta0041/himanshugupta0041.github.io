@@ -16,9 +16,7 @@ fetch("data/products.json")
   });
 
 
-// ===============================
-// UPDATE COMPARE DRAWER UI
-// ===============================
+
 function updateDrawer() {
 
     if (!drawer || !listBox) return;

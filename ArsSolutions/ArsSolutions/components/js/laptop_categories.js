@@ -98,7 +98,7 @@ function renderLaptopProducts(list) {
   feather.replace();
 }
 
-/* ========== EXTRACT FILTER VALUES ========== */
+
 function getLaptopSpecs(products, match) {
   const set = new Set();
   products.forEach(p => {

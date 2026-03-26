@@ -1,4 +1,4 @@
-/* ========== GLOBAL VARS ========== */
+
 let laptopProducts = [];
 let allProducts = [];
 

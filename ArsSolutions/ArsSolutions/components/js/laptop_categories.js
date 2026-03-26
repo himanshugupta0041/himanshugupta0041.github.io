@@ -109,7 +109,7 @@ function getLaptopSpecs(products, match) {
   return [...set];
 }
 
-/* ========== RENDER DESKTOP FILTERS ========== */
+
 function renderLaptopBrands() {
   const box = document.getElementById("filter-laptop-brand");
   const brands = [...new Set(laptopProducts.map(p => p.brand))];

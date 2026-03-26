@@ -220,7 +220,7 @@ function renderMobileLaptopSizes() {
   });
 }
 
-/* ========== FILTER ENGINE (Desktop + Mobile) ========== */
+
 function applyLaptopFilters() {
   let filtered = [...laptopProducts];
 

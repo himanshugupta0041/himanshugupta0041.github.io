@@ -1,5 +1,3 @@
-// Load all products
-// let PRODUCT_DATA = [];
 
 fetch("data/products.json")
     .then(res => res.json())

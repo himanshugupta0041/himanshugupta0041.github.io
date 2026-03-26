@@ -24,7 +24,7 @@ fetch("data/products.json")
     renderLaptopProducts(laptopProducts);
   });
 
-/* ========== RENDER CARDS ========== */
+
 function renderLaptopProducts(list) {
   laptopGrid.innerHTML = "";
 

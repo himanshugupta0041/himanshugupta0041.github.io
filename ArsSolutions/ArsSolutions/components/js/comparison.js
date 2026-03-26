@@ -7,9 +7,7 @@ const drawer = document.getElementById("compareDrawer");
 const listBox = document.getElementById("compareList");
 const openComparePage = document.getElementById("openComparePage");
 
-// ===============================
-// LOAD PRODUCT DATA
-// ===============================
+
 fetch("data/products.json")
   .then(res => res.json())
   .then(data => {

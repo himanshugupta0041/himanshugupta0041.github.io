@@ -58,9 +58,7 @@ function updateDrawer() {
 }
 
 
-// ===============================
-// ADD TO COMPARE BUTTON LOGIC
-// ===============================
+
 document.addEventListener("click", (e) => {
     const btn = e.target.closest(".compare-btn");
     if (!btn) return;

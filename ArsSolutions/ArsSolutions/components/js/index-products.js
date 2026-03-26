@@ -13,7 +13,7 @@ fetch("data/products.json")
         initSliders();
     });
 
-// Build slider cards
+
 function buildSlider(trackId, items) {
     const track = document.getElementById(trackId);
     if (!track) return;

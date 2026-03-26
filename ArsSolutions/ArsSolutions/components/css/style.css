@@ -253,7 +253,7 @@ nav.scrolled {
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
 }
 
-/* Submit button */
+
 .contact-submit {
     background: linear-gradient(to right, #2563eb, #1d4ed8);
     transition: 0.25s ease;

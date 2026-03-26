@@ -85,9 +85,7 @@ document.addEventListener("click", (e) => {
 });
 
 
-// ===============================
-// OPEN COMPARE PAGE
-// ===============================
+
 if (openComparePage) {
     openComparePage.onclick = () => window.location.href = "compare.html";
 }

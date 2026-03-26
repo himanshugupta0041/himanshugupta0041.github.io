@@ -4,7 +4,7 @@ let allProducts = [];
 
 const laptopGrid = document.getElementById("laptop-grid");
 
-/* ========== LOAD PRODUCTS ========== */
+
 fetch("data/products.json")
   .then(res => res.json())
   .then(data => {

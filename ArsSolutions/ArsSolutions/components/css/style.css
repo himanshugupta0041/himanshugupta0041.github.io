@@ -223,7 +223,7 @@ nav.scrolled {
     transform: translateY(0);
 }
 
-/* Glass effect */
+
 .glass {
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(12px);

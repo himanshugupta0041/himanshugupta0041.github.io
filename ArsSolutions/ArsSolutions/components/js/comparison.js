@@ -1,6 +1,4 @@
-// ===============================
-// GLOBAL COMPARE STATE
-// ===============================
+
 let compareItems = JSON.parse(localStorage.getItem("compareList") || "[]");
 let PRODUCT_DATA = [];
 

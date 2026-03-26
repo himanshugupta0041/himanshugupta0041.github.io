@@ -241,7 +241,7 @@ function applyLaptopFilters() {
     filtered = filtered.filter(p => p.availability === "In Stock");
   }
 
-  // PRICE
+ 
   const min = Number(document.getElementById("laptop-minPrice").value || document.getElementById("mobile-laptop-minPrice").value);
   const max = Number(document.getElementById("laptop-maxPrice").value || document.getElementById("mobile-laptop-maxPrice").value);
 

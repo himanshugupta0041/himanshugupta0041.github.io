@@ -94,7 +94,7 @@ function renderLaptopProducts(list) {
     `;
   });
 
-  // Refresh feather icons
+
   feather.replace();
 }
 

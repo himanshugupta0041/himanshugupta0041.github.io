@@ -166,7 +166,7 @@ function renderLaptopSizes() {
   });
 }
 
-/* ========== RENDER MOBILE FILTERS ========== */
+
 function renderMobileLaptopBrands() {
   const box = document.getElementById("mobile-laptop-filter-brand");
   box.innerHTML = "";

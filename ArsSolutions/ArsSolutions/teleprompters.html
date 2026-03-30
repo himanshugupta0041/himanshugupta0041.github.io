@@ -874,7 +874,7 @@ fetch("quote-modal.html")
                 btn.classList.add('active', 'bg-primary', 'text-white');
                 btn.classList.remove('bg-white', 'text-gray-600');
                 
-                // Filter products
+
                 const filter = btn.dataset.filter;
                 productCards.forEach(card => {
                     if (filter === 'all' || card.dataset.category === filter) {

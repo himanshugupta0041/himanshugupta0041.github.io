@@ -34,7 +34,7 @@ loadSimilarProducts();
 // 2) RENDER MAIN PRODUCT
 // ---------------------------------------------------------------
 function renderProduct(p) {
-  // Image
+ 
   $("product-image").src = p.images[0];
 
   // Title & Info

@@ -11,7 +11,7 @@ async function aiProductFinder(query) {
 
     let results = [...products]; 
 
-    // CATEGORY detection
+ 
     if (query.includes("teleprompter")) {
         results = results.filter(p => p.category === "teleprompters");
     }

@@ -178,7 +178,7 @@
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
 
-// DOM references (mobile)
+
 const mobileSearchInput = document.getElementById("mobileSearchInput");
 const mobileSearchResults = document.getElementById("mobileSearchResults");
 

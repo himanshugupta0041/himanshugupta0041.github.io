@@ -1,6 +1,4 @@
-// ================================================================
-// PRODUCT PAGE – FULLY OPTIMIZED VERSION
-// ================================================================
+
 
 // Get product ID from URL
 const productId = new URLSearchParams(window.location.search).get("id");

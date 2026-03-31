@@ -317,7 +317,7 @@ function setupCompareButton(product) {
 
     if (!btn) {
         console.warn("Compare button not found on this page.");
-        return; // Prevent crash
+        return; 
     }
 
     btn.onclick = () => {

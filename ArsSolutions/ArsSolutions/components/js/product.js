@@ -9,9 +9,7 @@ let ALL_PRODUCTS = [];
 // DOM short references
 const $ = (id) => document.getElementById(id);
 
-// ---------------------------------------------------------------
-// 1) MAIN FETCH
-// ---------------------------------------------------------------
+
 fetch("data/products.json")
   .then((res) => res.json())
   .then((products) => {

@@ -275,9 +275,7 @@ function renderProducts(list) {
 }
 
 
-// ======================================================
-// BRAND FILTERS
-// ======================================================
+
 function renderBrands() {
     if (!brandBox) return;
 

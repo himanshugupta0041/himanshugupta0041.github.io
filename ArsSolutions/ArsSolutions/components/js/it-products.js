@@ -313,9 +313,7 @@ function renderTypes() {
 }
 
 
-// ======================================================
-// APPLY FILTERS
-// ======================================================
+
 function applyFilters() {
     let filtered = [...IT_PRODUCTS];
 

@@ -174,7 +174,7 @@
 // IT PRODUCTS SYSTEM (Clean, Fast, Error-Free)
 // ======================================================
 
-// DOM ELEMENTS (SAFE)
+
 const itGrid = document.getElementById("it-grid");
 const brandBox = document.getElementById("filter-brand");
 const typeBox = document.getElementById("filter-type");

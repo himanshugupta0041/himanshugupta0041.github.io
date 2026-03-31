@@ -244,7 +244,7 @@ function renderProducts(list) {
                     </h3>
                 </a>
 
-                <!-- SHORT DESCRIPTION -->
+             
                 <p class="text-gray-500 text-sm">
                     ${p.short}
                 </p>

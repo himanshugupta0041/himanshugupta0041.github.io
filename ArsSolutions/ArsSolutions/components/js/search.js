@@ -174,7 +174,7 @@
 // Works on every page safely
 // ==============================================
 
-// DOM references (desktop)
+
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
 

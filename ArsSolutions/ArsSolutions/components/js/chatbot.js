@@ -39,7 +39,7 @@ function addMessage(html, sender = "bot") {
     feather.replace();
 }
 
-// TYPING INDICATOR
+
 function showTyping() {
     const typingDiv = document.createElement("div");
     typingDiv.id = "typing";

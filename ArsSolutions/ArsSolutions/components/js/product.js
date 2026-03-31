@@ -57,7 +57,7 @@ function renderProduct(p) {
   $("product-oldPrice").innerText = p.oldPrice || "";
   $("product-discount").innerText = p.discount || "";
 
-  // Discount Badge top-left
+
   const discountBadge = $("discountBadge");
   if (p.discount) {
     discountBadge.innerText = p.discount;

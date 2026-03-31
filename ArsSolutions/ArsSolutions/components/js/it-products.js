@@ -184,9 +184,6 @@ const resetBtn = document.getElementById("resetFilters");
 let IT_PRODUCTS = [];
 let ALL_PRODUCTS = [];
 
-// ======================================================
-// LOAD DATA
-// ======================================================
 fetch("data/products.json")
     .then(res => res.json())
     .then(data => {

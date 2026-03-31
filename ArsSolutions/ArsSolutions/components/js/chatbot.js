@@ -12,7 +12,7 @@ const chatInput = document.getElementById("chat-input");
 const sendBtn = document.getElementById("chat-send");
 const voiceBtn = document.getElementById("voiceBtn");
 
-// ADD USER & BOT MESSAGE
+
 function addMessage(html, sender = "bot") {
     const msg = document.createElement("div");
     msg.className = `flex gap-3 ${sender === "user" ? "justify-end" : ""}`;

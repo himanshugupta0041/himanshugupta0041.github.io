@@ -327,7 +327,7 @@ function applyFilters() {
         filtered = filtered.filter(p => p.availability.toLowerCase() === "in stock");
     }
 
-    // PRICE FILTER
+  
     const min = Number(document.getElementById("minPrice")?.value) || 0;
     const max = Number(document.getElementById("maxPrice")?.value) || Infinity;
 

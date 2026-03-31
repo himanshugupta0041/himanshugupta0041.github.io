@@ -141,7 +141,7 @@ function renderThumbnails(images) {
     thumb.onclick = () => {
       $("product-image").src = src;
 
-      // Remove active border
+     
       document
         .querySelectorAll("#thumbnail-row img")
         .forEach((img) => img.classList.remove("border-primary"));

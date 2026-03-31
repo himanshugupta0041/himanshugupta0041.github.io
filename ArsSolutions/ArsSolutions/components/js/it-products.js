@@ -290,9 +290,6 @@ function renderBrands() {
 }
 
 
-// ======================================================
-// TYPE FILTERS (Mouse, Keyboard, Monitor, etc.)
-// ======================================================
 function renderTypes() {
     if (!typeBox) return;
 

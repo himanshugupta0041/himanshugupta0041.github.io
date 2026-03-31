@@ -225,7 +225,7 @@ function loadSimilarProducts() {
   document.getElementById("similar-next").onclick = () =>
     wrapper.scrollBy({ left: 300, behavior: "smooth" });
 
-  // Drag scroll
+
   let isDown = false;
   let startX, scrollLeft;
 

@@ -3,7 +3,7 @@
 // ------------------------------
 
 async function aiProductFinder(query) {
-    // Load products once
+   
     const res = await fetch("data/products.json");
     const products = await res.json();
 

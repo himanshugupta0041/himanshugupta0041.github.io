@@ -1,6 +1,3 @@
-// ------------------------------
-// AI Product Finder (Rule-Based NLP)
-// ------------------------------
 
 async function aiProductFinder(query) {
    

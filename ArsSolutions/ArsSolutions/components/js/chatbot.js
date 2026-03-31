@@ -240,7 +240,7 @@ function sendMessage() {
     }, 600);
 }
 
-// CLICK & ENTER
+
 sendBtn.addEventListener("click", sendMessage);
 chatInput.addEventListener("keypress", e => {
     if (e.key === "Enter") sendMessage();

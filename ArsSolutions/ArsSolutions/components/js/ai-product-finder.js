@@ -41,7 +41,7 @@ async function aiProductFinder(query) {
         );
     }
 
-    // KEYWORD matching
+  
     const keywords = query.split(" ");
     results = results.filter(p =>
         keywords.some(k =>

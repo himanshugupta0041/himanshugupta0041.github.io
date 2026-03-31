@@ -6,7 +6,7 @@ const productId = new URLSearchParams(window.location.search).get("id");
 let CURRENT_PRODUCT = null;
 let ALL_PRODUCTS = [];
 
-// DOM short references
+
 const $ = (id) => document.getElementById(id);
 
 

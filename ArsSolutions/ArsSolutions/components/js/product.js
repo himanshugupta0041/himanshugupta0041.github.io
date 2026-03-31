@@ -37,7 +37,7 @@ function renderProduct(p) {
  
   $("product-image").src = p.images[0];
 
-  // Title & Info
+ 
   $("product-name").innerText = p.name;
   $("product-brand").innerText = p.brand;
   $("product-sku").innerText = p.sku;

@@ -180,7 +180,7 @@ const brandBox = document.getElementById("filter-brand");
 const typeBox = document.getElementById("filter-type");
 const resetBtn = document.getElementById("resetFilters");
 
-// GLOBAL PRODUCT ARRAYS
+
 let IT_PRODUCTS = [];
 let ALL_PRODUCTS = [];
 

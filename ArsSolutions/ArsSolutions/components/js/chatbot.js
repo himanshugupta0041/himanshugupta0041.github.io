@@ -103,7 +103,7 @@ function hideTyping() {
 //     return html;
 // }
 
-// SEND MESSAGE HANDLER
+
 
 function analyzeMessage(msg) {
     msg = msg.toLowerCase();

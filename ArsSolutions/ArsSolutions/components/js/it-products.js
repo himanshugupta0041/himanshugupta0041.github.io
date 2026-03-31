@@ -336,7 +336,7 @@ function applyFilters() {
         return price >= min && price <= max;
     });
 
-    // TYPE FILTER
+    
     const selectedTypes = [...document.querySelectorAll(".filter-type:checked")]
         .map(t => t.value.toLowerCase());
 

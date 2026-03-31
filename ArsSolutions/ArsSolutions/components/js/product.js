@@ -1,6 +1,6 @@
 
 
-// Get product ID from URL
+
 const productId = new URLSearchParams(window.location.search).get("id");
 
 let CURRENT_PRODUCT = null;

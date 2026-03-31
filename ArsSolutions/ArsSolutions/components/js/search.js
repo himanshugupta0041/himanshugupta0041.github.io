@@ -209,7 +209,6 @@ function handleSearch(inputEl, resultsEl) {
             return;
         }
 
-        // Filter matches
         const matches = GLOBAL_PRODUCTS.filter(p =>
             p.name.toLowerCase().includes(value) ||
             p.brand.toLowerCase().includes(value) ||

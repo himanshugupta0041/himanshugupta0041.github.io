@@ -352,9 +352,7 @@ function applyFilters() {
 }
 
 
-// ======================================================
-// EVENT LISTENERS (SAFE)
-// ======================================================
+
 document.addEventListener("change", applyFilters);
 
 resetBtn?.addEventListener("click", () => {

@@ -450,7 +450,7 @@ if (closeMobileFilters) {
     });
 }
 
-// close popup if user clicks outside the filter box
+
 if (mobileFilterPopup) {
     mobileFilterPopup.addEventListener("click", (e) => {
         if (e.target === mobileFilterPopup) {

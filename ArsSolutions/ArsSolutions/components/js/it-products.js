@@ -322,7 +322,7 @@ function applyFilters() {
         filtered = filtered.filter(p => selectedBrands.includes(p.brand));
     }
 
-    // AVAILABILITY
+
     if (document.querySelector(".filter-availability:checked")) {
         filtered = filtered.filter(p => p.availability.toLowerCase() === "in stock");
     }

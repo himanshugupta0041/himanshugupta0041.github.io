@@ -6,7 +6,7 @@ fetch("data/products.json")
     .then(res => res.json())
     .then(data => PRODUCT_DATA = data);
 
-// DOM REFS
+
 const chatBox = document.getElementById("chat-box");
 const chatInput = document.getElementById("chat-input");
 const sendBtn = document.getElementById("chat-send");

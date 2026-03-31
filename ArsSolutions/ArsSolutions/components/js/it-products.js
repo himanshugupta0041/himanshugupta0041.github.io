@@ -420,7 +420,7 @@ if (mobileSearchClose) {
     });
 }
 
-// Close popup when clicking outside input
+
 if (mobileSearchPopup) {
     mobileSearchPopup.addEventListener("click", (e) => {
         if (e.target === mobileSearchPopup) {

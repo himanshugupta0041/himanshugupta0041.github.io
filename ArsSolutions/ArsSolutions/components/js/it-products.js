@@ -401,9 +401,7 @@ if (mobileMenuBtn) {
 
 
 
-// ======================================================
-// MOBILE SEARCH POPUP TOGGLE
-// ======================================================
+
 const mobileSearchBtn = document.getElementById("mobileSearchBtn");
 const mobileSearchPopup = document.getElementById("mobileSearchPopup");
 const mobileSearchClose = document.getElementById("mobileSearchClose");

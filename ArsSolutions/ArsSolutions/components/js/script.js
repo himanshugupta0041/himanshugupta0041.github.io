@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('[data-slider="solar"].slider-next')
     );
 
-    // Feather fallback
+  
     try {
         feather.replace();
     } catch (e) {

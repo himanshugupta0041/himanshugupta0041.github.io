@@ -199,9 +199,7 @@ fetch("data/products.json")
     .catch(err => console.error("IT product load error:", err));
 
 
-// ======================================================
-// RENDER PRODUCTS GRID
-// ======================================================
+
 function renderProducts(list) {
     if (!itGrid) return;
 

@@ -192,7 +192,7 @@ fetch("data/products.json")
     .then(data => {
         ALL_PRODUCTS = data;
 
-        // Only IT products
+       
         IT_PRODUCTS = data.filter(p => p.category.toLowerCase() === "it-products");
 
         renderBrands();

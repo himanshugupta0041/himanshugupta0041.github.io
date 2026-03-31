@@ -116,7 +116,7 @@ function analyzeMessage(msg) {
     if (msg.includes("mouse") || msg.includes("keyboard") || msg.includes("accessories")) 
         results = results.filter(p => p.category === "it-products");
 
-    // -------- PRICE FILTER ----------
+ 
     const limit = msg.match(/\d+/);
     if (limit) {
         const priceLimit = Number(limit[0]);

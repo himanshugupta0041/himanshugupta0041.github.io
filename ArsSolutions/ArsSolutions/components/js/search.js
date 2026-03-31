@@ -239,7 +239,7 @@ function handleSearch(inputEl, resultsEl) {
         resultsEl.classList.remove("hidden");
     });
 
-    // Close dropdown on click outside
+   
     document.addEventListener("click", (e) => {
         if (!inputEl.contains(e.target) && !resultsEl.contains(e.target)) {
             resultsEl.classList.add("hidden");

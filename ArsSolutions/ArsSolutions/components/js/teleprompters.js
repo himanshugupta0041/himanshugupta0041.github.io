@@ -46,7 +46,7 @@ function renderProducts(list) {
       
         <div class="p-5 space-y-2">
 
-          <!-- NAME -->
+       
           <a href="product.html?id=${p.id}">
             <h3 class="font-semibold text-lg text-accent leading-snug group-hover:text-primary transition">
               ${p.name}

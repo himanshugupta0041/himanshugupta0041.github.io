@@ -3,7 +3,7 @@ let teleprompters = [];
 
 const grid = document.getElementById("teleprompter-grid");
 
-// Load products
+
 fetch("data/products.json")
   .then(res => res.json())
   .then(data => {

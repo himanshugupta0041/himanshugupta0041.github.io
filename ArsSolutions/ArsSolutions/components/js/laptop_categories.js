@@ -233,7 +233,7 @@ function applyLaptopFilters() {
     filtered = filtered.filter(p => selectedBrands.includes(p.brand));
   }
 
-  // AVAILABILITY
+ 
   const aDesk = document.querySelector(".filter-laptop-availability:checked");
   const aMobile = document.querySelector(".mobile-laptop-filter-availability:checked");
 

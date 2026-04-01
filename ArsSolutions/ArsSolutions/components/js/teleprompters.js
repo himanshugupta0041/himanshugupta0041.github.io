@@ -19,7 +19,7 @@ fetch("data/products.json")
     renderProducts(teleprompters);
   });
 
-// Render product cards
+
 function renderProducts(list) {
   grid.innerHTML = "";
 

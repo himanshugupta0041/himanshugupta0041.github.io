@@ -74,7 +74,7 @@ function renderLaptopProducts(list) {
                 `).join("")}
             </div>
 
-            <!-- PRICE + BTN -->
+          
             <div class="flex items-center justify-between">
                 <div>
                     <span class="text-2xl font-bold text-primary">${p.price}</span>

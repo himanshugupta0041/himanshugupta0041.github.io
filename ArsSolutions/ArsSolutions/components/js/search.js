@@ -194,9 +194,6 @@ fetch("data/products.json")
     .catch(err => console.error("Product load error:", err));
 
 
-// ==============================================
-// SEARCH HANDLER (reusable for desktop + mobile)
-// ==============================================
 function handleSearch(inputEl, resultsEl) {
     if (!inputEl || !resultsEl) return;
 

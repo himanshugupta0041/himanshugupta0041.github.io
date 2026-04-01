@@ -56,9 +56,7 @@ categorySelect?.addEventListener("change", (e) => {
     }
 });
 
-/*----------------------------------------------------------
-    SLIDER CLASS — SAFE VERSION (NO NULL ERRORS)
-----------------------------------------------------------*/
+
 class Slider {
     constructor(containerId, prevBtn, nextBtn) {
         this.container = document.querySelector(`#${containerId}`);

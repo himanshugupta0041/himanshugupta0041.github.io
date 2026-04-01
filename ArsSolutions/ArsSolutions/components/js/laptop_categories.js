@@ -286,7 +286,7 @@ function applyLaptopFilters() {
   renderLaptopProducts(filtered);
 }
 
-/* ========== EVENTS ========== */
+
 document.addEventListener("change", applyLaptopFilters);
 
 document.getElementById("laptop-resetFilters").addEventListener("click", () => {

@@ -32,7 +32,7 @@ function renderProducts(list) {
     grid.innerHTML += `
       <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden group">
 
-        <!-- IMAGE -->
+      
         <div class="relative bg-white">
             <img src="${p.images[0]}" class="h-56 w-full object-contain p-4 group-hover:scale-105 transition duration-300">
 

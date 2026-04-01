@@ -14,9 +14,7 @@ if (nav) {
     });
 }
 
-/*----------------------------------------------------------
-    DYNAMIC CATEGORY → PRODUCT DROPDOWN
-----------------------------------------------------------*/
+
 const productsData = {
     teleprompters: [
         "Studio Pro X1",

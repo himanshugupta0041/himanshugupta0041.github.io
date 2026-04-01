@@ -137,9 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-/*----------------------------------------------------------
-    MOBILE SEARCH POPUP — SAFE VERSION
-----------------------------------------------------------*/
+
 const mobileSearchBtn = document.getElementById("mobileSearchBtn");
 const mobileSearchPopup = document.getElementById("mobileSearchPopup");
 const mobileSearchClose = document.getElementById("mobileSearchClose");

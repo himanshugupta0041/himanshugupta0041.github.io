@@ -224,7 +224,7 @@ function renderMobileLaptopSizes() {
 function applyLaptopFilters() {
   let filtered = [...laptopProducts];
 
-  // BRAND
+ 
   const brandsDesk = [...document.querySelectorAll(".filter-laptop-brand:checked")].map(x => x.value);
   const brandsMobile = [...document.querySelectorAll(".mobile-laptop-filter-brand:checked")].map(x => x.value);
   const selectedBrands = [...new Set([...brandsDesk, ...brandsMobile])];

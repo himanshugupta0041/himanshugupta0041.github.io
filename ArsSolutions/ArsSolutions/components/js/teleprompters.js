@@ -71,7 +71,7 @@ function renderProducts(list) {
             `).join("")}
           </div>
 
-          <!-- ADD TO COMPARE -->
+        
           <button class="compare-btn bg-white border border-primary text-primary px-4 py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition"
         data-id="${p.id}">
     + Add to Compare

@@ -58,7 +58,7 @@ function renderLaptopProducts(list) {
             </span>
         </div>
 
-        <!-- CONTENT -->
+       
         <div class="p-6">
        <a href="product.html?id=${p.id}">
             <h3 class="font-semibold text-lg text-accent leading-snug group-hover:text-primary transition">

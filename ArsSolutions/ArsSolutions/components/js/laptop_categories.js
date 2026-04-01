@@ -250,7 +250,7 @@ function applyLaptopFilters() {
     return (!min || price >= min) && (!max || price <= max);
   });
 
-  // RAM
+  
   const ramDesk = [...document.querySelectorAll(".filter-laptop-ram:checked")].map(x => x.value);
   const ramMobile = [...document.querySelectorAll(".mobile-laptop-filter-ram:checked")].map(x => x.value);
   const selectedRAM = [...new Set([...ramDesk, ...ramMobile])];

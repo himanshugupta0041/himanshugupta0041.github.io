@@ -109,9 +109,7 @@ class Slider {
     }
 }
 
-/*----------------------------------------------------------
-    INITIALIZE SLIDERS (ONLY IF PRESENT)
-----------------------------------------------------------*/
+
 document.addEventListener("DOMContentLoaded", () => {
     new Slider(
         "teleprompter-slider",

@@ -245,8 +245,5 @@ function handleSearch(inputEl, resultsEl) {
 }
 
 
-// ==============================================
-// APPLY SEARCH TO DESKTOP + MOBILE
-// ==============================================
 handleSearch(searchInput, searchResults);
 handleSearch(mobileSearchInput, mobileSearchResults);

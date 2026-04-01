@@ -40,7 +40,7 @@ function renderLaptopProducts(list) {
     laptopGrid.innerHTML += `
       <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
 
-        <!-- IMAGE -->
+      
         <div class="relative h-64 overflow-hidden">
             <img src="${p.images[0]}" 
                 alt="${p.name}"

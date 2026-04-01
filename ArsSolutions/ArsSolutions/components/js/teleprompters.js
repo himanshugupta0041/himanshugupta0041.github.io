@@ -43,7 +43,7 @@ function renderProducts(list) {
             ` : ""}
         </div>
 
-        <!-- CONTENT -->
+      
         <div class="p-5 space-y-2">
 
           <!-- NAME -->

@@ -6,9 +6,7 @@ mobileMenuBtn?.addEventListener("click", () => {
     mobileMenu?.classList.toggle("hidden");
 });
 
-/*----------------------------------------------------------
-    NAV SHADOW ON SCROLL
-----------------------------------------------------------*/
+
 const nav = document.querySelector("nav");
 if (nav) {
     window.addEventListener("scroll", () => {

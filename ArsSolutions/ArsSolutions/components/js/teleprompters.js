@@ -245,7 +245,7 @@ function applyFilters() {
     return (!min || price >= min) && (!max || price <= max);
   });
 
-  // DISPLAY SIZE
+
   const sizeDesk = [...document.querySelectorAll(".filter-size:checked")].map(x => x.value);
   const sizeMobile = [...document.querySelectorAll(".mobile-filter-size:checked")].map(x => x.value);
   const selectedSizes = [...new Set([...sizeDesk, ...sizeMobile])];

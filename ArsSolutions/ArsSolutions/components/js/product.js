@@ -105,7 +105,7 @@ function renderProduct(p) {
 
   
 
-  // QUOTE MODAL AUTO-FILL
+
   document.addEventListener("click", function (e) {
     const btn = e.target.closest(".openQuote");
     if (!btn) return;

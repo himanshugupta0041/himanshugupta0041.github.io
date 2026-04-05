@@ -71,7 +71,7 @@ function renderProduct(p) {
   $("product-short").innerText = p.short;
   $("product-description").innerText = p.description;
 
-  // Highlights
+ 
   const highlightBox = $("product-highlights");
   highlightBox.innerHTML = "";
   p.highlights.forEach((h) => {

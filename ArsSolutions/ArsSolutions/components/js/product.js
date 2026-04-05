@@ -30,9 +30,7 @@ loadSimilarProducts();
     feather.replace();
   });
 
-// ---------------------------------------------------------------
-// 2) RENDER MAIN PRODUCT
-// ---------------------------------------------------------------
+
 function renderProduct(p) {
  
   $("product-image").src = p.images[0];

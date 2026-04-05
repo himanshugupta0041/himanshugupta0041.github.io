@@ -218,7 +218,7 @@ function renderProducts(list) {
         itGrid.innerHTML += `
         <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
 
-            <!-- IMAGE -->
+          
             <div class="relative bg-white">
                 <img src="${p.images[0]}" class="h-48 w-full object-contain p-4">
 

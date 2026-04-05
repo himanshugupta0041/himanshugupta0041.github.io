@@ -67,7 +67,7 @@ function renderProduct(p) {
   brandBadge.innerText = p.brand;
   brandBadge.classList.remove("hidden");
 
-  // Description & short
+
   $("product-short").innerText = p.short;
   $("product-description").innerText = p.description;
 

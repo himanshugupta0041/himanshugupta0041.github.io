@@ -185,7 +185,7 @@ const mobileSearchResults = document.getElementById("mobileSearchResults");
 
 let GLOBAL_PRODUCTS = [];
 
-// Load products once
+
 fetch("data/products.json")
     .then(res => res.json())
     .then(data => {

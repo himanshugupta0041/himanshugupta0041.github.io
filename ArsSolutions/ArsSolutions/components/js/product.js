@@ -41,7 +41,7 @@ function renderProduct(p) {
   $("product-sku").innerText = p.sku;
   $("product-category").innerText = p.category;
 
-  // Availability Badge
+ 
   const avail = $("product-availability");
   avail.innerText = p.availability;
   avail.className =

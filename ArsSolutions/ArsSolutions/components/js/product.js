@@ -62,7 +62,7 @@ function renderProduct(p) {
     discountBadge.classList.remove("hidden");
   }
 
-  // Brand badge top-right
+ 
   const brandBadge = $("brandBadge");
   brandBadge.innerText = p.brand;
   brandBadge.classList.remove("hidden");

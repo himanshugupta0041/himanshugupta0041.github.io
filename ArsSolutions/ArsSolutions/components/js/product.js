@@ -299,9 +299,7 @@ document.querySelectorAll(".mobile-tab-option").forEach((btn) => {
 
 
 
-// ---------------------------------------------------------------
-// 7) ADD TO COMPARE SYSTEM
-// ---------------------------------------------------------------
+
 function setupCompareButton(product) {
     const btn = document.getElementById("product-compare-btn");
 

@@ -363,9 +363,6 @@ resetBtn?.addEventListener("click", () => {
 });
 
 
-// ======================================================
-// DESKTOP SEARCH (uses global system safely)
-// ======================================================
 const dsInput = document.getElementById("search-input");
 const dsResults = document.getElementById("search-results");
 

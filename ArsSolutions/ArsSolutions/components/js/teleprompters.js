@@ -139,7 +139,7 @@ function renderMobileBrands() {
   });
 }
 
-// MOBILE SIZE FILTER
+
 function renderMobileSizes() {
   const box = document.getElementById("mobile-filter-size");
   box.innerHTML = "";

@@ -232,7 +232,7 @@ function renderProducts(list) {
            
             <div class="p-4 space-y-2">
 
-                <!-- NAME -->
+               
                 <a href="product.html?id=${p.id}">
                     <h3 class="font-semibold text-lg text-accent leading-snug">
                         ${p.name}

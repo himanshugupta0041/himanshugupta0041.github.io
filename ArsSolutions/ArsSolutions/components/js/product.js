@@ -120,9 +120,7 @@ function renderProduct(p) {
   });
 }
 
-// ---------------------------------------------------------------
-// 3) THUMBNAILS + ACTIVE STATE
-// ---------------------------------------------------------------
+
 function renderThumbnails(images) {
   const row = $("thumbnail-row");
   row.innerHTML = "";

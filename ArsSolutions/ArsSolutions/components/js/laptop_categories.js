@@ -261,7 +261,7 @@ function applyLaptopFilters() {
     );
   }
 
-  // STORAGE
+
   const storeDesk = [...document.querySelectorAll(".filter-laptop-storage:checked")].map(x => x.value);
   const storeMobile = [...document.querySelectorAll(".mobile-laptop-filter-storage:checked")].map(x => x.value);
   const selectedStorage = [...new Set([...storeDesk, ...storeMobile])];

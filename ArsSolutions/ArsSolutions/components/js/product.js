@@ -85,7 +85,7 @@ function renderProduct(p) {
     shipBox.innerHTML += `<li>${s}</li>`;
   });
 
-  // Features
+ 
   const featureBox = $("product-features");
   featureBox.innerHTML = "";
   p.features.forEach((f) => {

@@ -230,7 +230,7 @@ function applyFilters() {
     filtered = filtered.filter(p => p.availability === "In Stock");
   }
 
-  // PRICE (Desktop + Mobile)
+
   const minDesk = Number(document.getElementById("minPrice").value);
   const maxDesk = Number(document.getElementById("maxPrice").value);
 

@@ -379,9 +379,7 @@ if (typeof handleSearch === "function") {
 }
 
 
-// ======================================================
-// MOBILE MENU TOGGLE
-// ======================================================
+
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 

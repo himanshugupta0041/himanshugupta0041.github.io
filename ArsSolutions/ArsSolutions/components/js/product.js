@@ -210,7 +210,7 @@ function loadSimilarProducts() {
     `;
   });
 
-  // Slider arrows
+
   document.getElementById("similar-prev").onclick = () =>
     wrapper.scrollBy({ left: -300, behavior: "smooth" });
 

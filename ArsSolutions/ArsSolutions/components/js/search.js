@@ -219,7 +219,7 @@ function handleSearch(inputEl, resultsEl) {
             return;
         }
 
-        // Build dropdown HTML
+       
         resultsEl.innerHTML = matches.map(p => `
             <div class="p-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3"
                  onclick="window.location.href='product.html?id=${p.id}'">

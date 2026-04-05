@@ -64,7 +64,7 @@ function renderProducts(list) {
             ` : ""}
           </div>
 
-          <!-- HIGHLIGHTS / FEATURE TAGS -->
+      
           <div class="flex flex-wrap gap-2 mt-2">
             ${p.highlights.map(h => `
               <span class="text-xs bg-gray-100 px-2 py-1 rounded border">${h}</span>

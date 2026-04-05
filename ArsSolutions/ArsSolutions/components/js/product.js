@@ -151,9 +151,7 @@ function renderThumbnails(images) {
   });
 }
 
-// ---------------------------------------------------------------
-// 4) IMAGE ZOOM (Improved Smooth Version)
-// ---------------------------------------------------------------
+
 function enableZoom(img) {
   const lens = $("zoom-lens");
   const result = $("zoom-result");

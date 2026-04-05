@@ -122,7 +122,7 @@ function renderSizes() {
 
 /* ========== MOBILE FILTER BUILDER ========== */
 
-// MOBILE BRAND FILTER
+
 function renderMobileBrands() {
   const box = document.getElementById("mobile-filter-brand");
   box.innerHTML = "";

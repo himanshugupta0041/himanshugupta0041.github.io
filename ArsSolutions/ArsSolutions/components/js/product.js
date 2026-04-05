@@ -241,9 +241,7 @@ function loadSimilarProducts() {
   });
 }
 
-// ---------------------------------------------------------------
-// 6) DESKTOP + MOBILE TABS
-// ---------------------------------------------------------------
+
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.onclick = () => {
     document

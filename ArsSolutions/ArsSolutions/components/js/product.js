@@ -258,7 +258,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   };
 });
 
-// MOBILE POPUP
+
 const mobileTabsPopup = $("mobileTabPopup");
 const openMobileTabs = $("openMobileTabs");
 const closeMobileTabs = $("closeMobileTabs");

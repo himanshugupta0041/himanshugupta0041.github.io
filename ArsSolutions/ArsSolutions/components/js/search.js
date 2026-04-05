@@ -182,7 +182,7 @@ const searchResults = document.getElementById("search-results");
 const mobileSearchInput = document.getElementById("mobileSearchInput");
 const mobileSearchResults = document.getElementById("mobileSearchResults");
 
-// Product dataset container
+
 let GLOBAL_PRODUCTS = [];
 
 // Load products once

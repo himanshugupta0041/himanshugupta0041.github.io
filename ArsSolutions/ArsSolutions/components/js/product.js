@@ -50,7 +50,7 @@ function renderProduct(p) {
       ? "bg-emerald-100 text-emerald-700"
       : "bg-red-100 text-red-700");
 
-  // Price + discount
+
   $("product-price").innerText = p.price;
   $("product-oldPrice").innerText = p.oldPrice || "";
   $("product-discount").innerText = p.discount || "";

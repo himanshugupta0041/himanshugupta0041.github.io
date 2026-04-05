@@ -56,7 +56,7 @@ function renderProducts(list) {
         
           <p class="text-gray-500 text-sm">${p.short}</p>
 
-          <!-- PRICE -->
+        
           <div class="flex items-center gap-2 mt-1">
             <span class="text-primary font-bold text-lg">${p.price}</span>
             ${p.oldPrice ? `

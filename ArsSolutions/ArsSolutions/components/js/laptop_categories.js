@@ -52,7 +52,7 @@ function renderLaptopProducts(list) {
                 ${p.discount}
               </span>` : ""}
 
-            <!-- BADGE: Brand -->
+            
             <span class="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-medium px-2 py-1 rounded">
               ${p.brand}
             </span>

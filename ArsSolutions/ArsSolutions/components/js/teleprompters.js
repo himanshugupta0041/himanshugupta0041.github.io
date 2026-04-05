@@ -83,7 +83,7 @@ function renderProducts(list) {
   });
 }
 
-// Extract unique brands dynamically
+
 function renderBrands() {
   const box = document.getElementById("filter-brand");
   const brands = [...new Set(teleprompters.map(p => p.brand))];

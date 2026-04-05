@@ -272,7 +272,7 @@ function applyLaptopFilters() {
     );
   }
 
-  // SIZE
+
   const sizeDesk = [...document.querySelectorAll(".filter-laptop-size:checked")].map(x => x.value);
   const sizeMobile = [...document.querySelectorAll(".mobile-laptop-filter-size:checked")].map(x => x.value);
   const selectedSizes = [...new Set([...sizeDesk, ...sizeMobile])];

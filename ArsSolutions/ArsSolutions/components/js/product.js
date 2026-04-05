@@ -187,9 +187,7 @@ function enableZoom(img) {
   }
 }
 
-// ---------------------------------------------------------------
-// 5) SIMILAR PRODUCTS (Category Based)
-// ---------------------------------------------------------------
+
 function loadSimilarProducts() {
   const wrapper = document.getElementById("similar-products");
   wrapper.innerHTML = "";

@@ -92,7 +92,7 @@ function renderProduct(p) {
     featureBox.innerHTML += `<li>${f}</li>`;
   });
 
-  // Specs Table
+
   const specTable = $("product-specs");
   specTable.innerHTML = "";
   p.specs.forEach(([k, v]) => {

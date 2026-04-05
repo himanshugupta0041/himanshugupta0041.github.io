@@ -296,7 +296,7 @@ document.getElementById("laptop-resetFilters").addEventListener("click", () => {
   renderLaptopProducts(laptopProducts);
 });
 
-/* ========== MOBILE FILTER POPUP LOGIC ========== */
+
 const mobilePopup = document.getElementById("laptopMobileFilterPopup");
 const openMobile = document.getElementById("openLaptopMobileFilters");
 const closeMobile = document.getElementById("closeLaptopMobileFilters");

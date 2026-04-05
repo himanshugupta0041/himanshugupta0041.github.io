@@ -78,7 +78,7 @@ function renderProduct(p) {
     highlightBox.innerHTML += `<li>✔ ${h}</li>`;
   });
 
-  // Shipping
+  
   const shipBox = $("shipping-info");
   shipBox.innerHTML = "";
   p.shipping.forEach((s) => {

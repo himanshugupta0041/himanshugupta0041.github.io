@@ -374,9 +374,6 @@ if (typeof handleSearch === "function") {
 }
 
 
-// ======================================================
-// MOBILE SEARCH (also uses global search.js safely)
-// ======================================================
 const msInput = document.getElementById("mobileSearchInput");
 const msResults = document.getElementById("mobileSearchResults");
 

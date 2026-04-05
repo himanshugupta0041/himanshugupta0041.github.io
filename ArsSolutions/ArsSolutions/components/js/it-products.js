@@ -427,9 +427,7 @@ if (mobileSearchPopup) {
 
 
 
-// ======================================================
-// MOBILE FILTER POPUP TOGGLE  (THE NEW FIXED PART)
-// ======================================================
+
 const openMobileFilters = document.getElementById("openMobileFilters");
 const mobileFilterPopup = document.getElementById("mobileFilterPopup");
 const closeMobileFilters = document.getElementById("closeMobileFilters");

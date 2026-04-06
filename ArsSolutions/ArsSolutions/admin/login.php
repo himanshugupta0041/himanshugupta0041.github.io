@@ -10,7 +10,7 @@ $password = $_POST["password"];
 
 if ($username === $valid_username && $password === $valid_password) {
 
-    // Create session
+   
     $_SESSION["admin_logged_in"] = true;
     $_SESSION["admin_user"] = $username;
 

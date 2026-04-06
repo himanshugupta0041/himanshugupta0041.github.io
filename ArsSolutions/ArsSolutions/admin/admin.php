@@ -26,7 +26,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 
 <hr class="my-8">
 
-<!-- Add/Edit Form -->
+
 <h2 class="text-xl font-semibold mb-4">Add / Edit Product</h2>
 
 <form id="productForm" class="grid gap-4 bg-white p-6 rounded-xl shadow-md">

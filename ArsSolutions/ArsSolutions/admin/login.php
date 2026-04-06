@@ -14,7 +14,7 @@ if ($username === $valid_username && $password === $valid_password) {
     $_SESSION["admin_logged_in"] = true;
     $_SESSION["admin_user"] = $username;
 
-    // Redirect to admin panel
+  
     header("Location: admin.php");
     exit();
 

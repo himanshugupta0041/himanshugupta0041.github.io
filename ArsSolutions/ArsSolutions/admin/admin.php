@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['admin'])) {
+if (!isset($_SESSION['admin_logged_in'])) {
     header("Location: login.html");
     exit();
 }
 ?>
 
 
-<a href="logout.php">Logout</a>
+
 
 <!DOCTYPE html>
 <html>
@@ -49,6 +49,7 @@ if (!isset($_SESSION['admin'])) {
     </button>
 </form>
 
+<a href="logout.php">Logout</a>
 <script src="admin.js"></script>
 </body>
 </html>

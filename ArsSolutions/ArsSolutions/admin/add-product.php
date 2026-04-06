@@ -1,17 +1,20 @@
 <?php
 include "db.php";
 
-$name = $_POST['name'];
-$brand = $_POST['brand'];
-$category = $_POST['category'];
-$price = $_POST['price'];
-$description = $_POST['description'];
+$data = json_decode(file_get_contents("php://input"), true);
 
-// For now static image
-$image = "images/default.png";
+$id = $data["id"];
+$name = $data["name"];
+$brand = $data["brand"];
+$category = $data["category"];
+$price = $data["price"];
+$description = $data["description"];
+$image = $data["image"];
 
-$sql = "INSERT INTO products (name, brand, category, price, description, image)
-        VALUES ('$name', '$brand', '$category', '$price', '$description', '$image')";
+$sql = "INSERT INTO products 
+(id, name, brand, category, price, description, image, availability)
+VALUES 
+('$id','$name','$brand','$category','$price','$description','$image','In Stock')";
 
 if ($conn->query($sql)) {
     echo "Product Added";
@@ -19,3 +22,5 @@ if ($conn->query($sql)) {
     echo "Error: " . $conn->error;
 }
 ?>
+
+

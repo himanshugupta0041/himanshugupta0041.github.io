@@ -1,11 +1,20 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+include "db.php";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$name = $_POST['name'];
+$brand = $_POST['brand'];
+$category = $_POST['category'];
+$price = $_POST['price'];
+$description = $_POST['description'];
 
-    $data = file_get_contents("php://input");
-    file_put_contents("../data/products.json", $data);
+$image = "images/default.png";
 
-    echo json_encode(["status" => "success"]);
+$sql = "INSERT INTO products (name, brand, category, price, description, image)
+        VALUES ('$name', '$brand', '$category', '$price', '$description', '$image')";
+
+if ($conn->query($sql)) {
+    echo "Product Added";
+} else {
+    echo "Error: " . $conn->error;
 }
-?>
+?> 

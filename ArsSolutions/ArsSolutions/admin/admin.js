@@ -1,6 +1,7 @@
 let products = [];
 
-
+// Load products
+// fetch("get_products.php")
 fetch("../data/products.json")
     .then(res => res.json())
     .then(data => {
@@ -10,7 +11,7 @@ fetch("../data/products.json")
 
 function $(id) { return document.getElementById(id); }
 
-
+// Render all products with Edit/Delete buttons
 function renderProductList() {
     const box = $("productList");
     box.innerHTML = "";
@@ -31,7 +32,7 @@ function renderProductList() {
     });
 }
 
-
+// Edit product
 function editProduct(id) {
     const p = products.find(x => x.id === id);
     $("product-id").value = p.id;
@@ -42,7 +43,7 @@ function editProduct(id) {
     $("product-short").value = p.short;
 }
 
-
+// Delete product
 function deleteProduct(id) {
     if (!confirm("Delete product?")) return;
 
@@ -50,7 +51,17 @@ function deleteProduct(id) {
     saveChanges();
 }
 
+// function deleteProduct(id) {
+//     if (!confirm("Delete product?")) return;
 
+//     fetch("delete_product.php?id=" + id)
+//         .then(() => {
+//             alert("Deleted!");
+//             location.reload();
+//         });
+// }
+
+// Handle form submit
 $("productForm").onsubmit = (e) => {
     e.preventDefault();
 
@@ -63,19 +74,19 @@ $("productForm").onsubmit = (e) => {
         category: $("product-category").value,
         price: $("product-price").value,
         short: $("product-short").value,
-        images: [] 
+        images: [] // image upload logic below
     };
 
-   
+    // Upload files → generate URLs
     const files = $("product-images").files;
     for (let f of files) {
         const url = "../images/uploaded/" + f.name;
         newProduct.images.push(url);
 
-       
+        // Save image to server (requires backend)
     }
 
-   
+    // Add or update
     const existing = products.findIndex(p => p.id === id);
     if (existing >= 0) products[existing] = newProduct;
     else products.push(newProduct);
@@ -84,8 +95,32 @@ $("productForm").onsubmit = (e) => {
 };
 
 
+// $("productForm").onsubmit = (e) => {
+//     e.preventDefault();
+
+//     const product = {
+//         id: $("product-id").value || Date.now().toString(),
+//         name: $("product-name").value,
+//         brand: $("product-brand").value,
+//         category: $("product-category").value,
+//         price: $("product-price").value,
+//         short: $("product-short").value,
+//         image: ""
+//     };
+
+//     fetch("add_product.php", {
+//         method: "POST",
+//         body: JSON.stringify(product)
+//     })
+//     .then(res => res.text())
+//     .then(msg => {
+//         alert("Saved!");
+//         location.reload();
+//     });
+// };
+// Save updated JSON via backend
 function saveChanges() {
-    fetch("update-json.php", {
+    fetch("/ArsSolutions/admin/update-json.php", {
         method: "POST",
         body: JSON.stringify(products)
     })
@@ -93,4 +128,38 @@ function saveChanges() {
             alert("Saved!");
             location.reload();
         });
+}
+
+// function saveChanges(product) {
+//     fetch("add_product.php", {
+//         method: "POST",
+//         body: JSON.stringify(product)
+//     })
+//     .then(res => res.text())
+//     .then(msg => {
+//         alert(msg);
+//         location.reload();
+//     });
+// }
+
+function addProduct() {
+    const data = {
+        id: Date.now().toString(),
+        name: document.getElementById("name").value,
+        brand: document.getElementById("brand").value,
+        category: document.getElementById("category").value,
+        price: document.getElementById("price").value,
+        image: document.getElementById("image").value,
+        description: "New Product"
+    };
+
+    fetch("add_product.php", {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+    .then(res => res.text())
+    .then(msg => {
+        alert(msg);
+        location.reload();
+    });
 }

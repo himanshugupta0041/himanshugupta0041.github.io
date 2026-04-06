@@ -86,7 +86,7 @@ $("productForm").onsubmit = (e) => {
         // Save image to server (requires backend)
     }
 
-    // Add or update
+  
     const existing = products.findIndex(p => p.id === id);
     if (existing >= 0) products[existing] = newProduct;
     else products.push(newProduct);

@@ -1,6 +1,6 @@
 let products = [];
 
-// Load products
+
 // fetch("get_products.php")
 fetch("../data/products.json")
     .then(res => res.json())

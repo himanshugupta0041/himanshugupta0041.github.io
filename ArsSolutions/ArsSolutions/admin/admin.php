@@ -21,7 +21,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 
 <h1 class="text-3xl font-bold mb-6 text-accent">Product Manager</h1>
 
-<!-- Product List -->
+
 <div id="productList" class="space-y-4 mb-10"></div>
 
 <hr class="my-8">
